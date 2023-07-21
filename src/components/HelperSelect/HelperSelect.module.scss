@@ -1,0 +1,34 @@
+.root {
+  max-width: 1110px;
+  padding: 15px 25px;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-width: 15px;
+  background: #fef7f1;
+  box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.3);
+}
+
+.text {
+  background: #920f00;
+  color: #fff;
+}
+
+.insideWrapper {
+  width: 100%;
+  padding: 40px;
+  flex-shrink: 0;
+
+  @media (max-width: 560px) {
+    padding: 10px;
+  }
+}
+
+.invalid{
+  border: 2px solid #ee2300;
+  border-radius: 4px;
+}

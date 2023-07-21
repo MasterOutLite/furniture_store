@@ -1,0 +1,26 @@
+.root {
+  max-width: 350px;
+  padding: 40px 30px;
+
+  background-color:#920F0019; //rgba(146, 15, 0, 0.1);
+  color: #920f00;
+}
+
+.title{
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.label{
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+}
+
+.btn{
+  width: 100%;
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: #920f00;
+  border: 0;
+}

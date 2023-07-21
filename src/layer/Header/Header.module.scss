@@ -1,0 +1,17 @@
+.root {
+  height: 150px;
+  
+  @media (max-width: 992px) {
+    height: auto;
+  }
+}
+
+.img{
+  max-height: 85px;
+  height: 100%;
+}
+
+
+
+
+

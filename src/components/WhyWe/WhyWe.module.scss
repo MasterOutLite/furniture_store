@@ -1,0 +1,66 @@
+.wrapper {
+  background-color: #fef7f1;
+}
+
+.root {
+  min-height: 750px;
+  padding: 60px 0;
+}
+
+.reasons{
+  gap: 60px 0;
+  width: 100%;
+  margin: 0;
+}
+
+.title {
+  font-size: 3rem;
+  color: #47261f;
+ @media (max-width: 768px) {
+   text-align: center;
+ }
+}
+
+.reasonsWrapper{
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.reasonsContainer {
+  color: #47261f;
+  gap: 30px;
+}
+
+.reasonsItem {
+  flex: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.reasonsDescription {
+  line-height: 28px;
+  font-size: 1.5rem;
+  color: #47261f;
+}
+
+.index {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  //background: rgb(217,28,86);
+  background: linear-gradient(52deg, rgba(217, 28, 86, 1) 0%, rgba(149, 9, 52, 1) 27%, rgba(255, 75, 131, 1) 82%);
+
+  color: #fff;
+  font-size: 2rem;
+}
+
+.note {
+  padding: 40px 20px 0;
+  color: #920f00;
+}
