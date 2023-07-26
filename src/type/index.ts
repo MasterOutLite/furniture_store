@@ -55,3 +55,22 @@ export type HelperSelectType = {
             answer: string;
         }
 }
+
+export enum VariantBg {
+    primary = 'primary',
+    secondary = 'secondary',
+    success = 'success',
+    danger = 'danger',
+    warning = 'warning',
+    info = 'info',
+    light = 'light',
+    dark = 'dark',
+}
+
+export type ToastItemType = {
+    id: string | number,
+    title: string,
+    body: string,
+    bg?: VariantBg,
+    data?: string,
+}

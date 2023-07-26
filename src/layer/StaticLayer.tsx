@@ -5,6 +5,7 @@ import HelperSelect from "../components/HelperSelect/HelperSelect";
 import Advantages from "../components/Advantages/Advantages";
 import WhyWe from "../components/WhyWe/WhyWe";
 import Info from "../components/Info/Info";
+import CallbackContacts from "../components/CallbackContacts/CallbackContacts";
 
 export interface StaticLayerProps {
     children?: ReactNode;
@@ -24,8 +25,8 @@ function StaticLayer({children, previewImg, previewTitle, previewTitleChildren}:
             <Entry img={previewImg} children={previewTitleChildren} title={previewTitle}/>
             <HelperSelect/>
             {children}
-            <Advantages/>
-            <WhyWe/>
+            <CallbackContacts/>
+            {/*<WhyWe/>*/}
             <Info/>
         </Main>
     );

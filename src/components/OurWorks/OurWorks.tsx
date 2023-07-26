@@ -1,10 +1,10 @@
-import React, {useEffect, useMemo, useState} from 'react';
+import React, {useMemo, useState} from 'react';
 import styles from './OurWorks.module.scss'
 
 import Container from "react-bootstrap/Container";
 import Title from "../Title/Title";
 import {KitchenImg} from "../../type";
-import {Button, Image, Modal, Row} from "react-bootstrap";
+import {Button, Carousel, Modal, Row} from "react-bootstrap";
 import clsx from "clsx";
 
 export interface OurWorksProps {
@@ -18,6 +18,10 @@ function OurWorks({kitchens, cssImgClass}: OurWorksProps) {
     const [amountImg, setAmountImg] = useState<number>(step);
 
     const [selectImg, setSelectImg] = useState<KitchenImg>()
+    const [selectImgIndex, setSelectImgIndex] = useState<number>(0)
+    const handleSelect = (selectedIndex: number) => {
+        setSelectImgIndex(selectedIndex);
+    };
 
     const isImg = () => amountImg < kitchens.length;
 
@@ -51,9 +55,10 @@ function OurWorks({kitchens, cssImgClass}: OurWorksProps) {
                     {photos.map((value, index) => (
                         <div onClick={() => {
                             setSelectImg(value);
+                            setSelectImgIndex(index);
                             handleShow();
                         }}
-                             style={{maxHeight: '250px'}} key={value.img} className={styles.imgContainer}>
+                             style={{maxHeight: '250px'}} key={index} className={styles.imgContainer}>
                             <img src={value.img} alt={value.title}
                                  className={clsx(styles.itemImg, cssImgClass)}/>
                         </div>
@@ -61,17 +66,34 @@ function OurWorks({kitchens, cssImgClass}: OurWorksProps) {
                 </Row>
                 <div className={clsx('d-flex', 'justify-content-center', 'pt-5')}>
                     {isImg() ?
-                        <Button onClick={onLoadMore} className={clsx('px-4', 'py-2', 'fs-3', styles.btn)}>Завантажити ще</Button>
+                        <Button onClick={onLoadMore} className={clsx('px-4', 'py-2', 'fs-3', styles.btn)}>Завантажити
+                            ще</Button>
                         :
                         null}
 
                 </div>
             </Container>
 
-            <Modal show={show} onHide={handleClose} size={"xl"}>
+            <Modal show={show} onHide={handleClose} fullscreen={true} scrollable={false}>
                 <Modal.Header closeButton/>
-                <Modal.Body className={clsx('d-flex', 'justify-content-center')}>
-                    <Image fluid src={selectImg?.img} alt={selectImg?.title}/>
+                <Modal.Body>
+                    <Container fluid={"xxl"}>
+                        {/*<Image fluid src={selectImg?.img} alt={selectImg?.title}/>*/}
+                        <Carousel activeIndex={selectImgIndex} onSelect={handleSelect} interval={null}>
+                            {
+                                kitchens.map((value, index) => (
+                                    <Carousel.Item key={index}>
+                                        <img
+                                            className="d-block w-100 h-100"
+                                            src={value.img}
+                                            alt={value.title}
+                                            style={{maxHeight: '88vh'}}
+                                        />
+                                    </Carousel.Item>
+                                ))
+                            }
+                        </Carousel>
+                    </Container>
                 </Modal.Body>
             </Modal>
         </>

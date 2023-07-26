@@ -17,7 +17,7 @@ export interface HeaderProps {
 function Header({title, styleClass}: HeaderProps) {
     const navigate = useNavigate();
 
-    function goToHome(){
+    function goToHome() {
         navigate('/');
     }
 
@@ -36,7 +36,7 @@ function Header({title, styleClass}: HeaderProps) {
                                 </Col>
                                 <Col className={clsx('py-3', 'my-auto')}>
                                     <Nav.Link className={'fs-1'} onClick={goToHome}>
-                                      <img src={logo} alt={'logo'} className={styles.img}/>
+                                        <img src={logo} alt={'logo'} className={styles.img}/>
                                     </Nav.Link>
                                 </Col>
                                 <Col className={clsx('py-3', 'my-auto')}>
@@ -50,7 +50,6 @@ function Header({title, styleClass}: HeaderProps) {
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-
         </header>
     );
 }

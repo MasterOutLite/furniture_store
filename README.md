@@ -55,3 +55,4 @@ Server
 
 ## GitHub Page for React app
 
+"homepage": "https://MasterOutLite.github.io/furniture_store",

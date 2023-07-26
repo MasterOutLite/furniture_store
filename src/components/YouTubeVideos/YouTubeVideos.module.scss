@@ -1,0 +1,20 @@
+.video {
+  height: 400px;
+  margin: 10px 0;
+
+  @media (min-width: 576px) {
+    height: 300px;
+  }
+
+  @media (min-width: 768px) {
+    height: 190px;
+  }
+
+  @media (min-width: 992px) {
+    height: 260px;
+  }
+
+  @media (min-width: 1200px) {
+    height: 380px;
+  }
+}

@@ -19,8 +19,10 @@ import HelperSelectImg from "../HelperSelectItem/HelperSelectImg/HelperSelectImg
 import HelperQuestions from "../HelperSelectItem/Question/HelperQuestions";
 import HelperSelectOne from "../HelperSelectItem/HelperSelectOne/HelperSelectOne";
 import {post} from "../../helpers/api";
+import useToastStore from "../../store/ToastStore";
 
 function HelperSelect() {
+    const addToast = useToastStore(state => state.addToast);
 
     const [selectKitchen] = useState<HelperSelectType[]>(
         [kitchenStyleSelect, kitchenLayoutSelect, kitchenMaterialSelect,
@@ -32,7 +34,6 @@ function HelperSelect() {
     const [kitchen, setKitchen] = useState<HelperSelectType>(selectKitchen[index]);
 
     const [valid, setValid] = useState<boolean>(true);
-    const [validMsg, setValidMsg] = useState<string>('');
 
     const [sendData, setSendData] = useState({
         name: '',
@@ -57,14 +58,12 @@ function HelperSelect() {
                 for (let question of kitchen.typeHelper.show) {
                     if (getValue(question.type).trim().length < 1 && question.required) {
                         setValid(false);
-                        setValidMsg('Деякі поля не заповнені або заповнені невірно!');
                         return;
                     }
                 }
             } else {
                 if (getValue(kitchen.type).trim().length < 1) {
                     setValid(false);
-                    setValidMsg('Ви повинні вибрати щось!');
                     return;
                 }
             }
@@ -92,7 +91,6 @@ function HelperSelect() {
         console.log(values);
 
         if (!isPhoneNumber(sendData.phone) || sendData.name.length < 3) {
-            setValidMsg('Поля з номером телефону заповнені не вірно або поле з іменем є пустим!');
             setValid(false);
             return;
         } else
@@ -104,6 +102,9 @@ function HelperSelect() {
             console.log(data);
             if (data.succes === true) {
                 reset();
+                addToast('Допомога із вибором кухні',
+                    'Ваша заявка була успішно відправлена на обробку!\nНевідовзі з вами зв\'яжуться.'
+                    );
             }
             setWait(false);
         }
@@ -212,7 +213,7 @@ function HelperSelect() {
                         : <div className={clsx('fs-6', 'py-1')}>Заповніть поля даними та натисніть кнопку внизу
                         </div>}
 
-                    <div className={clsx('my-3', 'p-3',!valid ? styles.invalid : null)}>
+                    <div className={clsx('my-3', 'p-3', !valid ? styles.invalid : null)}>
                         {kitchen.typeHelper.type === 'selectImg' ?
                             <>
                                 <HelperSelectImg type={kitchen.type} show={kitchen.typeHelper.show}
@@ -250,14 +251,6 @@ function HelperSelect() {
                                 null
                         }
                     </div>
-
-
-                    {/*{!valid ?*/}
-                    {/*    <Alert variant={'danger'}>*/}
-                    {/*        {validMsg}*/}
-                    {/*    </Alert>*/}
-                    {/*    : null*/}
-                    {/*}*/}
 
                     <div className={clsx('d-flex', 'justify-content-between')}>
                         <Button onClick={onPreviewSelectHelper} variant="danger"> ← Назад </Button>
