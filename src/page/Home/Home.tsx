@@ -4,7 +4,6 @@ import {StaticLayer} from "../../layer";
 import CatalogFurniture from "../../components/CatalogFurniture/CatalogFurniture";
 import clsx from "clsx";
 import useLanguageStore from "../../store/LanguageStore";
-import ImageCompare from "../../components/BeforeAndAfterComparison/ImageCompare";
 
 function Home() {
     const [language, translate] = useLanguageStore(state => [state.language, state.translate]);
