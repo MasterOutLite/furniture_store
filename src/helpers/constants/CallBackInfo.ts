@@ -2,18 +2,28 @@ import {HelperSelectType} from "../../type";
 
 
 const callBackInfo: HelperSelectType = {
-    title: 'Як з вами звязатися?',
+    title: {
+        ua: 'Як з вами звязатися?',
+        ru: 'Как с вами связаться?',
+    },
     type: 'arr',
     typeHelper: {
         type: "callback",
         show: [{
-            question: 'Ваше ім\'я',
+            question:
+                {
+                    ua: 'Ваше ім\'я',
+                    ru: 'Ваше имя',
+                },
             type: 'name',
             inputType: 'text',
             answer: '',
             required: true
         }, {
-            question: 'Ваш номер телефону',
+            question: {
+                ua: 'Ваш номер телефону',
+                ru: 'Ваш номер телефона',
+            },
             type: 'phone',
             inputType: 'tel',
             answer: '',

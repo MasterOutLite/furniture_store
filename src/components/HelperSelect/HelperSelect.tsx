@@ -1,7 +1,7 @@
 import React, {memo, useState} from 'react';
 import clsx from "clsx";
 import styles from "./HelperSelect.module.scss";
-import {Alert, Button, Col, Row} from "react-bootstrap";
+import {Button, Col, Row} from "react-bootstrap";
 import Container from "react-bootstrap/Container";
 
 import {
@@ -9,10 +9,11 @@ import {
     kitchenMaterialSelect,
     kitchenStyleSelect,
     sizeKitchen,
-    typeTableTopSelect, urlCallBack,
+    typeTableTopSelect,
+    urlCallBack,
     whenNeededKitchen
 } from '../../helpers/constant'
-import {Answer, HelperSelectType} from "../../type";
+import {Answer, HelperSelectType, VariantBg} from "../../type";
 import callBackInfo from "../../helpers/constants/CallBackInfo";
 import {isPhoneNumber} from "../../helpers/check";
 import HelperSelectImg from "../HelperSelectItem/HelperSelectImg/HelperSelectImg";
@@ -20,9 +21,11 @@ import HelperQuestions from "../HelperSelectItem/Question/HelperQuestions";
 import HelperSelectOne from "../HelperSelectItem/HelperSelectOne/HelperSelectOne";
 import {post} from "../../helpers/api";
 import useToastStore from "../../store/ToastStore";
+import useLanguageStore from "../../store/LanguageStore";
 
 function HelperSelect() {
     const addToast = useToastStore(state => state.addToast);
+    const [language, translate] = useLanguageStore(state => [state.language, state.translate]);
 
     const [selectKitchen] = useState<HelperSelectType[]>(
         [kitchenStyleSelect, kitchenLayoutSelect, kitchenMaterialSelect,
@@ -102,9 +105,14 @@ function HelperSelect() {
             console.log(data);
             if (data.succes === true) {
                 reset();
-                addToast('Допомога із вибором кухні',
-                    'Ваша заявка була успішно відправлена на обробку!\nНевідовзі з вами зв\'яжуться.'
-                    );
+                addToast(translate.helperSelect[language].sentTitle,
+                    translate.helperSelect[language].sentSuccessfully,
+                );
+            } else {
+                addToast(translate.helperSelect[language].sentTitle,
+                    translate.helperSelect[language].sentNotSuccessfully,
+                    VariantBg.danger
+                );
             }
             setWait(false);
         }
@@ -197,20 +205,21 @@ function HelperSelect() {
             <div className={styles.root}>
                 <Row className={clsx(styles.text, 'p-4')}>
                     <Col className={clsx('fs-5', 'fw-semibold')}>
-                        <div>Розрахуйте, скільки коштуватиме кухня.</div>
-                        Вкажіть параметри, щоб фахівець зміг заздалегідь запропонувати вам кілька варіантів та
-                        зорієнтувати за ціною</Col>
+                        <div>{translate.helperSelect[language].title}</div>
+                        {translate.helperSelect[language].subTitle}
+                    </Col>
                     <Col className={clsx('fs-6', 'fw-semibold')} xs={1}> {index + 1}/{selectKitchen.length}</Col>
                 </Row>
 
                 <div className={styles.insideWrapper}>
 
-                    <div className={clsx('fs-2', 'fw-medium')}>{kitchen.title}</div>
+                    <div className={clsx('fs-2', 'fw-medium')}>{kitchen.title[language]}</div>
                     {kitchen.typeHelper.type === 'selectImg' || kitchen.typeHelper.type === 'select' ?
-                        <div className={clsx('fs-6', 'py-1')}>Виберіть зі списку нижче, що вам
-                            подобається і натисніть кнопку внизу
+                        <div className={clsx('fs-6', 'py-1')}>
+                            {translate.helperSelect[language].selectFromListBelow}
                         </div>
-                        : <div className={clsx('fs-6', 'py-1')}>Заповніть поля даними та натисніть кнопку внизу
+                        : <div className={clsx('fs-6', 'py-1')}>
+                            {translate.helperSelect[language].fillInField}
                         </div>}
 
                     <div className={clsx('my-3', 'p-3', !valid ? styles.invalid : null)}>
@@ -233,7 +242,7 @@ function HelperSelect() {
                         {
                             kitchen.typeHelper.type === 'select' ?
                                 <>
-                                    <HelperSelectOne type={kitchen.type} show={kitchen.typeHelper.show}
+                                    <HelperSelectOne type={kitchen.type} show={kitchen.typeHelper.show[language]}
                                                      getSelect={getValue} setSelect={setValue}/>
                                 </>
                                 :
@@ -253,12 +262,15 @@ function HelperSelect() {
                     </div>
 
                     <div className={clsx('d-flex', 'justify-content-between')}>
-                        <Button onClick={onPreviewSelectHelper} variant="danger"> ← Назад </Button>
+                        <Button onClick={onPreviewSelectHelper} variant="danger">
+                            ← {translate.helperSelect[language].btnPreview}</Button>
                         {
                             kitchen.typeHelper.type !== 'callback' ?
-                                <Button onClick={onNextSelectHelper} variant="success">Вперед →</Button>
+                                <Button onClick={onNextSelectHelper} variant="success">
+                                    {translate.helperSelect[language].btnNext} →</Button>
                                 :
-                                <Button onClick={onFinal} disabled={wait} variant="success">Завершити ✓</Button>
+                                <Button onClick={onFinal} disabled={wait} variant="success">
+                                    {translate.helperSelect[language].bntFinal} ✓</Button>
                         }
                     </div>
                 </div>

@@ -8,13 +8,18 @@ import {post} from "../../helpers/api";
 import {urlCallBack} from "../../helpers/constant";
 import useToastStore from "../../store/ToastStore";
 import {VariantBg} from "../../type";
+import useLanguageStore from "../../store/LanguageStore";
 
 export interface CallBackProps {
     cssClass?: string;
+    width?: string;
+    successful?: () => void;
 }
 
-function CallBack({cssClass}: CallBackProps) {
+function CallBack({cssClass, width, successful}: CallBackProps) {
     const addToast = useToastStore(state => state.addToast);
+    const [language, translate] = useLanguageStore(state => [state.language, state.translate]);
+
     const [isInvalid, setIsInvalid] = useState(false);
     const [wait, setWait] = useState<boolean>(false);
 
@@ -36,37 +41,40 @@ function CallBack({cssClass}: CallBackProps) {
     async function postCallBack(name: string, phone: string) {
         setWait(true);
         const data = await post(urlCallBack, {name, phone})
-        console.log(data);
         if (data && data.succes === true) {
             setNameUser('');
             setNumber('');
-            addToast('Зворотній виклик',
-                'Ваша звернення було відправлено. Найближчим часом ми вам перетелефонуємо.'
+            addToast(translate.callBack[language].callBack,
+                translate.callBack[language].sentSuccessfully
             );
+            if (successful)
+                successful();
         } else {
-            addToast('Зворотній виклик', 'Під час відправлення сталася помилка. Спробуйти пізніше.', VariantBg.danger);
+            addToast(translate.callBack[language].callBack,
+                translate.callBack[language].sentNotSuccessfully, VariantBg.danger);
         }
         setWait(false);
     }
 
     return (
-        <Form noValidate className={clsx(styles.root, cssClass)} onSubmit={sendCallBack}>
-            <div className={styles.title}>Замовити зворотній дзвінок</div>
+        <Form noValidate className={clsx(styles.root, cssClass)} onSubmit={sendCallBack} style={{maxWidth: width}}>
+            <div className={styles.title}>{translate.callBack[language].orderCallBack}</div>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                <Form.Label className={styles.label}>Ваше Імʼя</Form.Label>
+                <Form.Label className={styles.label}>{translate.callBack[language].yourName}</Form.Label>
                 <Form.Control isValid={false} name={'name'} value={nameUser} onChange={(event) => {
                     setNameUser(event.target.value)
-                }} type="text" placeholder="Ім'я" required/>
+                }} type="text" placeholder={translate.callBack[language].yourName} required/>
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                <Form.Label className={styles.label}>Номер телефону</Form.Label>
+                <Form.Label className={styles.label}>{translate.callBack[language].yourNumber}</Form.Label>
                 <Form.Control isInvalid={isInvalid} name={'number'} value={number} onChange={(event) => {
                     setNumber(event.target.value)
                 }} type="tel" placeholder="+38" required/>
             </Form.Group>
-            <Button type='submit' disabled={wait} className={styles.btn} variant="danger">Передзвоніть
-                мені</Button>
+            <Button type='submit' disabled={wait} className={styles.btn} variant="danger">
+                {translate.callBack[language].callBackMe}
+            </Button>
         </Form>
 
     );

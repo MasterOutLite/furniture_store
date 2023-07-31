@@ -6,6 +6,7 @@ import Title from "../Title/Title";
 import {KitchenImg} from "../../type";
 import {Button, Carousel, Modal, Row} from "react-bootstrap";
 import clsx from "clsx";
+import useLanguageStore from "../../store/LanguageStore";
 
 export interface OurWorksProps {
     kitchens: KitchenImg[];
@@ -14,10 +15,11 @@ export interface OurWorksProps {
 
 function OurWorks({kitchens, cssImgClass}: OurWorksProps) {
 
+    const [language, translate] = useLanguageStore(state => [state.language, state.translate]);
+
     const [step,] = useState<number>(12);
     const [amountImg, setAmountImg] = useState<number>(step);
 
-    const [selectImg, setSelectImg] = useState<KitchenImg>()
     const [selectImgIndex, setSelectImgIndex] = useState<number>(0)
     const handleSelect = (selectedIndex: number) => {
         setSelectImgIndex(selectedIndex);
@@ -50,11 +52,10 @@ function OurWorks({kitchens, cssImgClass}: OurWorksProps) {
     return (
         <>
             <Container fluid>
-                <Title title={'Наші роботи'}/>
+                <Title title={translate.ourWorks[language].title}/>
                 <Row xs={1} sm={2} md={3} lg={4} className={styles.container}>
                     {photos.map((value, index) => (
                         <div onClick={() => {
-                            setSelectImg(value);
                             setSelectImgIndex(index);
                             handleShow();
                         }}
@@ -66,8 +67,9 @@ function OurWorks({kitchens, cssImgClass}: OurWorksProps) {
                 </Row>
                 <div className={clsx('d-flex', 'justify-content-center', 'pt-5')}>
                     {isImg() ?
-                        <Button onClick={onLoadMore} className={clsx('px-4', 'py-2', 'fs-3', styles.btn)}>Завантажити
-                            ще</Button>
+                        <Button onClick={onLoadMore} className={clsx('px-4', 'py-2', 'fs-3')}>
+                            {translate.ourWorks[language].btnMore}
+                            </Button>
                         :
                         null}
 

@@ -2,16 +2,19 @@ import React, {useEffect, useState} from 'react';
 import {Col, Row} from "react-bootstrap";
 import styles from "./HelperSelectImg.module.scss";
 import clsx from "clsx";
-import {Answer, KitchenImg} from "../../../type";
+import {Answer, KitchenImgWithTranslate} from "../../../type";
+import useLanguageStore from "../../../store/LanguageStore";
 
 export interface SelectImgProps {
     type: string;
-    show: KitchenImg[];
+    show: KitchenImgWithTranslate[];
     getSelect: (type: string) => string;
     setSelect: (value: Answer) => void;
 }
 
 function HelperSelectImg({show, getSelect, setSelect, type}: SelectImgProps) {
+    const [language] = useLanguageStore(state => [state.language, state.translate]);
+
     const [selectItem, setSelectItem] = useState<number>(-1);
 
     function setSelectElement(index: number, answer: string) {
@@ -21,7 +24,7 @@ function HelperSelectImg({show, getSelect, setSelect, type}: SelectImgProps) {
 
     useEffect(() => {
         setSelectItem(-1);
-        show.map((value, index) => {
+        show.forEach((value, index) => {
             if (value.title === getSelect(type))
                 setSelectItem(index);
         })
@@ -42,10 +45,10 @@ function HelperSelectImg({show, getSelect, setSelect, type}: SelectImgProps) {
                             : null
                         }
                         <div className={styles.imgContainer}>
-                            <img src={value.img} alt={value.title}
+                            <img src={value.img} alt={value.translate[language].title}
                                  className={styles.itemImg}/>
                         </div>
-                        <div className={'mt-1'}>{value.title}</div>
+                        <div className={'mt-1'}>{value.translate[language].title}</div>
                     </Col>
                 ))
             }

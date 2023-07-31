@@ -2,10 +2,9 @@ import React, {ReactNode, useEffect} from 'react';
 import {Main} from "./index";
 import Entry from "../components/Entry/Entry";
 import HelperSelect from "../components/HelperSelect/HelperSelect";
-import Advantages from "../components/Advantages/Advantages";
-import WhyWe from "../components/WhyWe/WhyWe";
 import Info from "../components/Info/Info";
 import CallbackContacts from "../components/CallbackContacts/CallbackContacts";
+import StaticButton from "../components/StaticButton/StaticButton";
 
 export interface StaticLayerProps {
     children?: ReactNode;
@@ -26,8 +25,8 @@ function StaticLayer({children, previewImg, previewTitle, previewTitleChildren}:
             <HelperSelect/>
             {children}
             <CallbackContacts/>
-            {/*<WhyWe/>*/}
             <Info/>
+            <StaticButton/>
         </Main>
     );
 }

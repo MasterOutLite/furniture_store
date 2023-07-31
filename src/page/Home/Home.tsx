@@ -3,14 +3,20 @@ import React from 'react';
 import {StaticLayer} from "../../layer";
 import CatalogFurniture from "../../components/CatalogFurniture/CatalogFurniture";
 import clsx from "clsx";
+import useLanguageStore from "../../store/LanguageStore";
+import ImageCompare from "../../components/BeforeAndAfterComparison/ImageCompare";
 
 function Home() {
-    const title = 'Салон меблів';
-    const subTitle =
-        <div className={clsx('fs-5',)}> Купуючи у виробника, Ви економите до 40% на вартості меблів. </div>;
+    const [language, translate] = useLanguageStore(state => [state.language, state.translate]);
 
     return (
-        <StaticLayer previewTitleChildren={subTitle} previewTitle={title}>
+        <StaticLayer
+            previewTitleChildren={
+                <div className={clsx('fs-5',)}>
+                    {translate.pageHome[language].subTitle}
+                </div>
+            }
+            previewTitle={translate.pageHome[language].title}>
             <CatalogFurniture/>
         </StaticLayer>
     );

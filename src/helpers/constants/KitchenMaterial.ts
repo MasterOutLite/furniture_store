@@ -5,32 +5,83 @@ import img4 from "../../assets/kitchen_material/pvh.jpg";
 import img5 from "../../assets/kitchen_material/plastik.jpg";
 import dontKnow from "../../assets/pngtree-gray-questio.jpg";
 
-import {HelperSelectType, KitchenImg} from "../../type";
+import {HelperSelectType, KitchenImgWithTranslate} from "../../type";
 
-const kitchenMaterial: KitchenImg[] = [
+const kitchenMaterial: KitchenImgWithTranslate[] = [
     {
         img: img1,
-        title: 'Емаль'
+        title: 'Емаль',
+        translate: {
+            ua: {
+                title: 'Емаль',
+            },
+            ru: {
+                title: 'Эмаль',
+            }
+        }
     }, {
         img: img2,
-        title: 'Масив'
+        title: 'Масив',
+        translate: {
+            ua: {
+                title: 'Масив',
+            },
+            ru: {
+                title: 'Массив',
+            }
+        }
     }, {
         img: img3,
-        title: 'Шпон'
+        title: 'Шпон',
+        translate: {
+            ua: {
+                title: 'Шпон',
+            },
+            ru: {
+                title: 'Шпон',
+            }
+        }
     }, {
         img: img4,
-        title: 'ПВХ'
+        title: 'ПВХ',
+        translate: {
+            ua: {
+                title: 'ПВХ',
+            },
+            ru: {
+                title: 'ПВХ',
+            }
+        }
     }, {
         img: img5,
-        title: 'Пластик'
+        title: 'Пластик',
+        translate: {
+            ua: {
+                title: 'Пластик',
+            },
+            ru: {
+                title: 'Пластик',
+            }
+        }
     }, {
         img: dontKnow,
-        title: 'Ще не знаю'
+        title: 'Ще не знаю',
+        translate: {
+            ua: {
+                title: 'Ще не знаю',
+            },
+            ru: {
+                title: 'Пока не знаю',
+            }
+        }
     }
 ];
 
 const kitchenMaterialSelect: HelperSelectType = {
-    title: 'Виберіть матеріал фасадів:',
+    title: {
+        ua: 'Виберіть матеріал фасадів:',
+        ru: 'Выберите материал фасадов:',
+    },
     type: 'kitchenMaterial',
     typeHelper: {
         type: "selectImg",

@@ -1,19 +1,22 @@
 import {HelperSelectType} from "../../type";
 
 
-
-
-
 const sizeKitchen: HelperSelectType = {
-    title: 'Вкажіть розміри вашої кухні:',
+    title: {
+        ua: 'Вкажіть розміри вашої кухні:',
+        ru: 'Укажите размеры вашей кухни:',
+    },
     type: 'arr',
     typeHelper: {
         type: "question",
         show: [
             {
                 type: 'kitchenSize',
-                inputType:'text',
-                question: 'Не обов\'язково',
+                inputType: 'text',
+                question: {
+                    ua: 'Не обов\'язково',
+                    ru: 'Не обязательно'
+                },
                 answer: '',
             }
         ],

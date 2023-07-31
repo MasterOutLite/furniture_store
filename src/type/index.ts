@@ -1,7 +1,12 @@
-export type KitchenImg = {
+export interface KitchenImg {
     img: string;
     title: string;
+
 };
+
+export interface KitchenImgWithTranslate extends KitchenImg {
+    translate: Translate;
+}
 
 export type KitchenSelection = {
     items: KitchenImg[];
@@ -10,19 +15,19 @@ export type KitchenSelection = {
 }
 
 export type FurnitureStyle = {
-    title: string;
-    subTitle: string;
+    title: { [key: string]: string };
+    subTitle: { [key: string]: string };
     img: string;
     hRef: string;
 }
 
 export type Question = {
     required?: boolean;
-    question: string;
     type: string;
-    inputType: string;
     answer: string;
     invalid?: boolean;
+    inputType: string;
+    question: { [key: string]: string };
 }
 
 export type Answer = {
@@ -31,12 +36,12 @@ export type Answer = {
 }
 
 export type HelperSelectType = {
-    title: string;
+    title: { [key: string]: string };
     type: string;
     typeHelper:
         {
             type: 'selectImg',
-            show: KitchenImg[],
+            show: KitchenImgWithTranslate[],
             answer: string;
         } |
         {
@@ -46,7 +51,7 @@ export type HelperSelectType = {
         } |
         {
             type: 'select',
-            show: string[],
+            show: { [key: string]: string[] },
             answer: string;
         } |
         {
@@ -73,4 +78,23 @@ export type ToastItemType = {
     body: string,
     bg?: VariantBg,
     data?: string,
+}
+
+export type Translate = {
+    // key - language (ua, en, fr,...)
+    [key: string]: {
+        //key - were need in html | value - translate
+        [key: string]: string
+    };
+}
+
+export type SelectTranslate = {
+    //key - components
+    [key: string]: Translate;
+}
+
+export enum Language {
+    ua = 'ua',
+    ru = 'ru',
+    de = 'de'
 }

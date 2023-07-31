@@ -1,0 +1,14 @@
+.root {
+  $paddingFromSide: 15px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  padding: 0 $paddingFromSide $paddingFromSide 0;
+}
+
+.btn{
+  $radius: 60px;
+  width: $radius;
+  height: $radius;
+  border-radius: 50%;
+}

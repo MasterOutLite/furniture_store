@@ -4,33 +4,85 @@ import img3 from "../..//assets/kitchen_layout/P-obraz.jpg";
 import img4 from "../..//assets/kitchen_layout/ostrov.jpg";
 import img5 from "../..//assets/kitchen_layout/af70ddae072e3bf68a77.jpg";
 import dontKnow from "../..//assets/pngtree-gray-questio.jpg";
-import {HelperSelectType, KitchenImg} from "../../type";
+import {HelperSelectType, KitchenImgWithTranslate} from "../../type";
 
 
-const kitchenLayout: KitchenImg[] = [
+const kitchenLayout: KitchenImgWithTranslate[] = [
     {
         img: img1,
-        title: 'Пряма'
+        title: 'Пряма',
+        translate: {
+            ua: {
+                title: 'Пряма',
+            },
+            ru: {
+                title: 'Прямая',
+            }
+        }
     }, {
         img: img2,
-        title: 'Кутова'
+        title: 'Кутова',
+        translate: {
+            ua: {
+                title: 'Кутова',
+            },
+            ru: {
+                title: 'Угловая',
+            }
+        }
     }, {
         img: img3,
-        title: 'П-подібна'
+        title: 'П-подібна',
+        translate: {
+            ua: {
+                title: 'П-подібна',
+            },
+            ru: {
+                title: 'П-образная',
+            }
+        }
     }, {
         img: img4,
-        title: 'Острів'
+        title: 'Острів',
+        translate: {
+            ua: {
+                title: 'Острів',
+            },
+            ru: {
+                title: 'Остров',
+            }
+        }
     }, {
         img: img5,
-        title: 'Свій варіант'
+        title: 'Свій варіант',
+        translate: {
+            ua: {
+                title: 'Свій варіант',
+            },
+            ru: {
+                title: 'Свой вариант',
+            }
+        }
     }, {
         img: dontKnow,
-        title: 'Ще не знаю'
+        title: 'Ще не знаю',
+        translate: {
+            ua: {
+                title: 'Ще не знаю',
+            },
+            ru: {
+                title: 'Пока не знаю',
+            }
+        }
     },
 ]
 
 const kitchenLayoutSelect: HelperSelectType = {
-    title: 'Виберіть планування кухні:',
+    title:
+        {
+            ua: 'Виберіть планування кухні:',
+            ru: 'Выберите планировку кухни:',
+        },
     type: 'kitchenScheme',
     typeHelper: {
         type: "selectImg",

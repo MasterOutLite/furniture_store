@@ -6,10 +6,12 @@ import {furnitureStyleItems} from "../../helpers/constant";
 import Title from "../Title/Title";
 import {useNavigate} from "react-router-dom";
 import {FurnitureStyle} from "../../type";
+import useLanguageStore from "../../store/LanguageStore";
 
 function CatalogFurniture() {
     const navigate = useNavigate();
 
+    const [language, translate] = useLanguageStore(state => [state.language, state.translate])
     const [kitchen] = useState<FurnitureStyle[]>(furnitureStyleItems);
 //       className={styles.itemList}
     //   className={styles.itemContainer}
@@ -20,19 +22,19 @@ function CatalogFurniture() {
 
     return (
         <div className={styles.root}>
-            <Title title={'Каталог меблів'}/>
+            <Title title={translate.catalogFurniture[language].title}/>
             <Row xxl={2} xl={2} lg={2} md={2} sm={1} xs={1} className={styles.itemList}>
                 {kitchen.map(value => (
-                    <Col key={value.title} className={styles.itemContainer}>
+                    <Col key={value.hRef} className={styles.itemContainer}>
                         <div className={styles.imgContainer}>
-                            <img className={styles.itemImg} src={value.img} alt={value.title}/>
+                            <img className={styles.itemImg} src={value.img} alt={value.title[language]}/>
                         </div>
                         <div className={styles.titleContainer}>
-                            <h4 className={styles.itemTitle}>{value.title}</h4>
-                            <h5 className={styles.itemSubTitle}>{value.subTitle}</h5>
+                            <h4 className={styles.itemTitle}>{value.title[language]}</h4>
+                            <h5 className={styles.itemSubTitle}>{value.subTitle[language]}</h5>
                             <Button onClick={() => {
                                 goTo(value.hRef);
-                            }} className={styles.btn} variant="danger">Перейти →</Button>
+                            }} className={styles.btn} variant="danger">{translate.catalogFurniture[language].btnGo} →</Button>
                         </div>
                     </Col>
                 ))}
