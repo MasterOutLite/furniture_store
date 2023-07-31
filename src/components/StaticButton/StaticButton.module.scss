@@ -6,6 +6,10 @@
   padding: 0 $paddingFromSide $paddingFromSide 0;
 }
 
+.body{
+  height: 90vh;
+}
+
 .btn{
   $radius: 60px;
   width: $radius;

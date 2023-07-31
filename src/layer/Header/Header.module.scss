@@ -5,15 +5,18 @@
     height: auto;
   }
 }
-.r{
-  position: relative;
-}
 
 .img{
   max-height: 85px;
   height: 100%;
 }
 
+.language{
+  @media (max-width: 768px) {
+
+    justify-content: center!important;
+  }
+}
 
 
 

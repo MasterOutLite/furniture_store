@@ -37,7 +37,7 @@ function Header({title, styleClass}: HeaderProps) {
                     <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                     <Navbar.Collapse id="basic-navbar-nav" className={clsx(styles.nav)}>
                         <Container>
-                            <div className={clsx('d-flex', 'justify-content-end')}>
+                            <div className={clsx('d-flex', 'justify-content-end', styles.language)}>
                                 <ButtonGroup>
                                     <ToggleButton
                                         id={`radio-ua`}

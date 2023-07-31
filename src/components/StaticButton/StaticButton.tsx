@@ -26,7 +26,7 @@ function StaticButton() {
                 backdrop="static"
             >
                 <Modal.Header closeButton/>
-                <Modal.Body className={'p-0'}>
+                <Modal.Body className={clsx('p-0', 'd-flex', 'justify-content-center')}>
                     <CallBack width={'100%'} successful={() => {
                         hideCallBack();
                     }}/>
