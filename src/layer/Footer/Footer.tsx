@@ -13,9 +13,18 @@ function Footer() {
                 <Col className={'text-center'}>
                     <div className={clsx('fs-6', 'fw-semibold', 'text-white')} style={{color: '#47261f'}}>
                         <div>
-                            © {translate.footer[language].title} – {new Date().getFullYear()}.
+                            Розмовляємо українською
                         </div>
-                        <div> {translate.footer[language].security}</div>
+                        <div>
+                            Говорим по-русски
+                        </div>
+                        <div>
+                            Wir sprechen deutsch
+                        </div>
+                        {/*<div>*/}
+                        {/*    © {translate.footer[language].title} – {new Date().getFullYear()}.*/}
+                        {/*</div>*/}
+                        {/*<div> {translate.footer[language].security}</div>*/}
                     </div>
                 </Col>
             </Row>

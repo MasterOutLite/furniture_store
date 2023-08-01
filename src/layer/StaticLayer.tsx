@@ -27,7 +27,7 @@ function StaticLayer({children, previewImg, previewTitle, previewTitleChildren}:
             {children}
             <CallbackContacts/>
             <Info/>
-            <Message/>
+            {/*<Message/>*/}
             <StaticButton/>
         </Main>
     );
