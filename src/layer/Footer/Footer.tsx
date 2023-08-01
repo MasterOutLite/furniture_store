@@ -2,10 +2,9 @@ import React from 'react';
 import Container from "react-bootstrap/Container";
 import clsx from "clsx";
 import {Col, Row} from "react-bootstrap";
-import useLanguageStore from "../../store/LanguageStore";
 
 function Footer() {
-    const [language, translate] = useLanguageStore(state => [state.language, state.translate])
+    //const [language, translate] = useLanguageStore(state => [state.language, state.translate])
 
     return (
         <Container fluid className={clsx('bg-dark', 'p-3')}>

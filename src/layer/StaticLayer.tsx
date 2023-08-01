@@ -5,7 +5,6 @@ import HelperSelect from "../components/HelperSelect/HelperSelect";
 import Info from "../components/Info/Info";
 import CallbackContacts from "../components/CallbackContacts/CallbackContacts";
 import StaticButton from "../components/StaticButton/StaticButton";
-import Message from "../components/Message/Message";
 
 export interface StaticLayerProps {
     children?: ReactNode;
