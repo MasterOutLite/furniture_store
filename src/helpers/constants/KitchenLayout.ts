@@ -17,7 +17,10 @@ const kitchenLayout: KitchenImgWithTranslate[] = [
             },
             ru: {
                 title: 'Прямая',
-            }
+            },
+            de: {
+                title: 'Gerade',
+            },
         }
     }, {
         img: img2,
@@ -28,7 +31,10 @@ const kitchenLayout: KitchenImgWithTranslate[] = [
             },
             ru: {
                 title: 'Угловая',
-            }
+            },
+            de: {
+                title: 'Ecke',
+            },
         }
     }, {
         img: img3,
@@ -39,7 +45,10 @@ const kitchenLayout: KitchenImgWithTranslate[] = [
             },
             ru: {
                 title: 'П-образная',
-            }
+            },
+            de: {
+                title: 'U-förmig',
+            },
         }
     }, {
         img: img4,
@@ -50,7 +59,10 @@ const kitchenLayout: KitchenImgWithTranslate[] = [
             },
             ru: {
                 title: 'Остров',
-            }
+            },
+            de: {
+                title: 'Die Insel',
+            },
         }
     }, {
         img: img5,
@@ -61,7 +73,10 @@ const kitchenLayout: KitchenImgWithTranslate[] = [
             },
             ru: {
                 title: 'Свой вариант',
-            }
+            },
+            de: {
+                title: 'Ihre Variante',
+            },
         }
     }, {
         img: dontKnow,
@@ -72,7 +87,10 @@ const kitchenLayout: KitchenImgWithTranslate[] = [
             },
             ru: {
                 title: 'Пока не знаю',
-            }
+            },
+            de: {
+                title: 'Weiß ich noch nicht',
+            },
         }
     },
 ]
@@ -82,6 +100,7 @@ const kitchenLayoutSelect: HelperSelectType = {
         {
             ua: 'Виберіть планування кухні:',
             ru: 'Выберите планировку кухни:',
+            de: 'Wählen Sie ein Küchenlayout:',
         },
     type: 'kitchenScheme',
     typeHelper: {

@@ -19,7 +19,10 @@ const kitchenStyle: KitchenImgWithTranslate[] = [
             },
             ru: {
                 title: 'Классика',
-            }
+            },
+            de: {
+                title: 'Klassisch',
+            },
         }
     }, {
         img: img2,
@@ -30,7 +33,10 @@ const kitchenStyle: KitchenImgWithTranslate[] = [
             },
             ru: {
                 title: 'Модерн',
-            }
+            },
+            de: {
+                title: 'Modern',
+            },
         }
     }, {
         img: img3,
@@ -41,7 +47,10 @@ const kitchenStyle: KitchenImgWithTranslate[] = [
             },
             ru: {
                 title: 'Прованс',
-            }
+            },
+            de: {
+                title: 'Provence',
+            },
         }
     }, {
         img: img4,
@@ -52,7 +61,10 @@ const kitchenStyle: KitchenImgWithTranslate[] = [
             },
             ru: {
                 title: 'Хай-Тек',
-            }
+            },
+            de: {
+                title: 'Hightech',
+            },
         }
     }, {
         img: img5,
@@ -63,7 +75,10 @@ const kitchenStyle: KitchenImgWithTranslate[] = [
             },
             ru: {
                 title: 'Неоклассика',
-            }
+            },
+            de: {
+                title: 'Neo-Klassiker',
+            },
         }
     }, {
         img: img6,
@@ -74,7 +89,10 @@ const kitchenStyle: KitchenImgWithTranslate[] = [
             },
             ru: {
                 title: 'Лофт',
-            }
+            },
+            de: {
+                title: 'Loft',
+            },
         }
     }, {
         img: img7,
@@ -85,7 +103,10 @@ const kitchenStyle: KitchenImgWithTranslate[] = [
             },
             ru: {
                 title: 'Минимализм',
-            }
+            },
+            de: {
+                title: 'Minimalistisch',
+            },
         }
     }, {
         img: dontKnow,
@@ -96,7 +117,10 @@ const kitchenStyle: KitchenImgWithTranslate[] = [
             },
             ru: {
                 title: 'Еще не решился',
-            }
+            },
+            de: {
+                title: 'Weiß ich noch nicht',
+            },
         }
     },
 ];
@@ -106,6 +130,7 @@ const kitchenStyleSelect: HelperSelectType = {
         {
             ua: 'В якому стилі Ви бажаєте кухню?',
             ru: 'В каком стиле Вы хотите кухню?',
+            de: 'In welchem Stil wünschen Sie sich eine Küche?',
         },
     type: 'kitchenStyle',
     typeHelper: {

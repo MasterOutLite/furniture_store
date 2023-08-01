@@ -5,6 +5,7 @@ const sizeKitchen: HelperSelectType = {
     title: {
         ua: 'Вкажіть розміри вашої кухні:',
         ru: 'Укажите размеры вашей кухни:',
+        de: 'Geben Sie die Maße Ihrer Küche an:',
     },
     type: 'arr',
     typeHelper: {
@@ -15,7 +16,8 @@ const sizeKitchen: HelperSelectType = {
                 inputType: 'text',
                 question: {
                     ua: 'Не обов\'язково',
-                    ru: 'Не обязательно'
+                    ru: 'Не обязательно',
+                    de: 'Nicht unbedingt',
                 },
                 answer: '',
             }

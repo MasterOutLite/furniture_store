@@ -17,7 +17,10 @@ const kitchenMaterial: KitchenImgWithTranslate[] = [
             },
             ru: {
                 title: 'Эмаль',
-            }
+            },
+            de: {
+                title: 'Emaille',
+            },
         }
     }, {
         img: img2,
@@ -28,7 +31,10 @@ const kitchenMaterial: KitchenImgWithTranslate[] = [
             },
             ru: {
                 title: 'Массив',
-            }
+            },
+            de: {
+                title: 'Reihe',
+            },
         }
     }, {
         img: img3,
@@ -39,7 +45,10 @@ const kitchenMaterial: KitchenImgWithTranslate[] = [
             },
             ru: {
                 title: 'Шпон',
-            }
+            },
+            de: {
+                title: 'Furnier',
+            },
         }
     }, {
         img: img4,
@@ -50,7 +59,10 @@ const kitchenMaterial: KitchenImgWithTranslate[] = [
             },
             ru: {
                 title: 'ПВХ',
-            }
+            },
+            de: {
+                title: 'PVC',
+            },
         }
     }, {
         img: img5,
@@ -61,7 +73,10 @@ const kitchenMaterial: KitchenImgWithTranslate[] = [
             },
             ru: {
                 title: 'Пластик',
-            }
+            },
+            de: {
+                title: 'Kunststoff',
+            },
         }
     }, {
         img: dontKnow,
@@ -72,7 +87,10 @@ const kitchenMaterial: KitchenImgWithTranslate[] = [
             },
             ru: {
                 title: 'Пока не знаю',
-            }
+            },
+            de: {
+                title: 'Weiß ich noch nicht',
+            },
         }
     }
 ];
@@ -81,6 +99,7 @@ const kitchenMaterialSelect: HelperSelectType = {
     title: {
         ua: 'Виберіть матеріал фасадів:',
         ru: 'Выберите материал фасадов:',
+        de: 'Wählen Sie das Fassadenmaterial:',
     },
     type: 'kitchenMaterial',
     typeHelper: {

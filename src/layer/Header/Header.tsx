@@ -42,7 +42,7 @@ function Header({title, styleClass}: HeaderProps) {
                                     <ToggleButton
                                         id={`radio-ua`}
                                         type="radio"
-                                        variant={'outline-success'}
+                                        variant='outline-success'
                                         name="radio"
                                         value={Language.ua}
                                         checked={radioValue === Language.ua}
@@ -51,9 +51,20 @@ function Header({title, styleClass}: HeaderProps) {
                                         UA
                                     </ToggleButton>
                                     <ToggleButton
+                                        id={`radio-de`}
+                                        type="radio"
+                                        variant='outline-primary'
+                                        name="radio"
+                                        value={Language.de}
+                                        checked={radioValue === Language.de}
+                                        onChange={(e) => setRadioValue(Language.de)}
+                                    >
+                                        DE
+                                    </ToggleButton>
+                                    <ToggleButton
                                         id={`radio-en`}
                                         type="radio"
-                                        variant={'outline-danger'}
+                                        variant='outline-danger'
                                         name="radio"
                                         value={Language.ru}
                                         checked={radioValue === Language.ru}
@@ -67,7 +78,7 @@ function Header({title, styleClass}: HeaderProps) {
                                 <Col className={clsx('py-3', 'my-auto')}>
                                     <div
                                         className={clsx("fs-3", "fw-semibold")}>{translate.header[radioValue].from}</div>
-                                    <div className={'fs-6'}>{translate.header[radioValue].work} 10:00 до 20:00</div>
+                                    <div className={'fs-6'}>{translate.header[radioValue].work}</div>
                                 </Col>
                                 <Col className={clsx('py-3', 'my-auto')}>
                                     <Nav.Link className={'fs-1'} onClick={goToHome}>

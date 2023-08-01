@@ -5,6 +5,7 @@ const callBackInfo: HelperSelectType = {
     title: {
         ua: 'Як з вами звязатися?',
         ru: 'Как с вами связаться?',
+        de: 'Wie kontaktiere ich dich?'
     },
     type: 'arr',
     typeHelper: {
@@ -14,6 +15,7 @@ const callBackInfo: HelperSelectType = {
                 {
                     ua: 'Ваше ім\'я',
                     ru: 'Ваше имя',
+                    de: 'Ihren Namen',
                 },
             type: 'name',
             inputType: 'text',
@@ -23,6 +25,7 @@ const callBackInfo: HelperSelectType = {
             question: {
                 ua: 'Ваш номер телефону',
                 ru: 'Ваш номер телефона',
+                de: 'Deine Telefonnummer',
             },
             type: 'phone',
             inputType: 'tel',

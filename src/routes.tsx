@@ -8,6 +8,7 @@ import KitchenNaturalWood from "./page/KitchenNaturalWood/KitchenNaturalWood";
 import KitchenProfileMDF from "./page/KitchenProfileMDF/KitchenProfileMDF";
 import WardrobesClassic from "./page/WardrobesClassic/WardrobesClassic";
 import WardrobesModern from "./page/WardrobesModern/WardrobesModern";
+import LegalDocuments from "./page/LegalDocuments/LegalDocuments";
 
 
 
@@ -34,6 +35,9 @@ const router = createBrowserRouter([
   },{
     path: '/WardrobesModern',
     element: <WardrobesModern />,
+  },{
+    path: '/LegalDocuments',
+    element: <LegalDocuments />,
   },
   {
     path: '*',

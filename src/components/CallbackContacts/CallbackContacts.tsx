@@ -13,17 +13,14 @@ function CallbackContacts() {
             defaultActiveKey="exampleWork"
             id="uncontrolled-tab-example"
             className={clsx("mb-3", 'mt-5')}
+            justify={true}
             fill
         >
-            {/*<Tab eventKey="whyWe" title={translate.callbackContacts[language].whyWe}>*/}
-            {/*    <WhyWe/>*/}
-            {/*</Tab>*/}
-
             <Tab eventKey="exampleWork" title={translate.callbackContacts[language].exampleWork}>
                 <ImageCompare/>
             </Tab>
 
-            <Tab eventKey="contacts" title={translate.callbackContacts[language].contacts}>
+            <Tab eventKey="contacts" title={translate.callbackContacts[language].contacts} >
                 <ContactsMessenger/>
             </Tab>
 

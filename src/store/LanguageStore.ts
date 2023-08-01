@@ -11,7 +11,7 @@ interface LanguageStore {
 
 const useLanguageStore = create<LanguageStore>((set, get) => (
     {
-        language: Language.ua,
+        language: Language.de,
         translate: translates,
         setLanguage(language){
             set({language});

@@ -4,24 +4,34 @@ import {SelectTranslate} from "../../type";
 const translates: SelectTranslate = {
     info: {
         ua: {
-            work: 'Працюємо щодня, з',
+            work: 'Працюємо щодня, з 10:00 до 20:00',
             title: 'Меблева фабрика "Verona"',
+            legalDocuments: 'Юридичні документи',
         },
         ru: {
-            work: 'Работаем каждый день, с',
+            work: 'Работаем каждый день, с 10:00 до 20:00',
             title: 'Мебельная фабрика "Verona"',
+            legalDocuments: 'Юридические документы',
         },
-        de: {}
+        de: {
+            work: 'Wir arbeiten jeden Tag von 10:00 bis 20:00 Uhr',
+            title: 'Möbelfabrik "Verona"',
+            legalDocuments: 'Legale Dokumente',
+        }
     },
     header: {
         ua: {
             from: 'Меблі від виробника',
-            work: 'Працюємо щодня з',
+            work: 'Працюємо щодня з 10:00 до 20:00',
         },
         ru: {
             from: 'Мебель от производителя',
-            work: 'Работаем каждый день, с',
+            work: 'Работаем ежедневно с 10:00 до 20:00',
         },
+        de: {
+            from: 'Möbel vom Hersteller',
+            work: 'Wir arbeiten jeden Tag von 10:00 bis 20:00 Uhr',
+        }
     },
     footer: {
         ua: {
@@ -31,6 +41,10 @@ const translates: SelectTranslate = {
         ru: {
             title: 'Мебельная фабрика Verona',
             security: 'Все права защищены.',
+        },
+        de: {
+            title: 'Möbelfabrik Verona',
+            security: 'Alle Rechte vorbehalten.',
         }
     },
     catalogFurniture: {
@@ -41,7 +55,11 @@ const translates: SelectTranslate = {
         ru: {
             title: 'Каталог мебели',
             btnGo: 'Перейти',
-        }
+        },
+        de: {
+            title: 'Katalog der Möbel',
+            btnGo: 'Gehe zu',
+        },
     },
     callbackContacts: {
         ua: {
@@ -55,7 +73,13 @@ const translates: SelectTranslate = {
             exampleWork: 'Образец наших работ',
             contacts: 'Свяжись с нами',
             video: 'Видео',
-        }
+        },
+        de: {
+            whyWe: 'Warum wir',
+            exampleWork: 'Eine Auswahl unserer Arbeiten',
+            contacts: 'Kontaktiere uns',
+            video: 'Video',
+        },
     },
     callBack: {
         ua: {
@@ -75,7 +99,16 @@ const translates: SelectTranslate = {
             callBack: 'Обратный вызов',
             sentSuccessfully: 'Ваше обращение было отправлено. В ближайшее время мы вам перезвоним.',
             sentNotSuccessfully: 'Во время отправки произошла ошибка. Попробуйте позже.',
-        }
+        },
+        de: {
+            orderCallBack: 'Bestellen Sie einen Rückruf',
+            yourName: 'Ihren Namen',
+            yourNumber: 'Telefonnummer',
+            callBackMe: 'Ruf mich zurück',
+            callBack: 'Ruf zurück',
+            sentSuccessfully: 'Ihre Anfrage wurde verschickt. Wir rufen Sie in Kürze zurück.',
+            sentNotSuccessfully: 'Beim Senden ist ein Fehler aufgetreten. Versuchen Sie es später erneut.',
+        },
     },
     helperSelect: {
         ua: {
@@ -84,7 +117,7 @@ const translates: SelectTranslate = {
             selectFromListBelow: 'Виберіть зі списку нижче, що вам подобається і натисніть кнопку внизу',
             fillInField: 'Заповніть поля даними та натисніть кнопку внизу',
             sentTitle: 'Допомога із вибором кухні',
-            sentSuccessfully: 'Ваша заявка була успішно відправлена на обробку!\nНевідовзі з вами зв\'яжуться.',
+            sentSuccessfully: 'Ваша заявка була успішно відправлена на обробку!\nНевдовзі з вами зв\'яжуться.',
             sentNotSuccessfully: 'Під час відправлення сталася помилка. Спробуйте пізніше.',
             btnPreview: 'Назад',
             btnNext: 'Вперед',
@@ -101,7 +134,19 @@ const translates: SelectTranslate = {
             btnPreview: 'Обратно',
             btnNext: 'Вперед',
             bntFinal: 'Завершить',
-        }
+        },
+        de: {
+            title: 'Berechnen Sie, wie viel die Küche kosten wird.',
+            subTitle: 'Geben Sie die Parameter an, damit der Spezialist Ihnen vorab mehrere Optionen anbieten und sich am Preis orientieren kann',
+            selectFromListBelow: 'Wählen Sie aus der Liste unten aus, was Ihnen gefällt, und klicken Sie auf die Schaltfläche unten',
+            fillInField: 'Füllen Sie die Felder mit Daten aus und klicken Sie auf die Schaltfläche unten',
+            sentTitle: 'Hilfe bei der Küchenauswahl',
+            sentSuccessfully: 'Ihre Bewerbung wurde erfolgreich zur Bearbeitung weitergeleitet! Sie werden in Kürze kontaktiert.',
+            sentNotSuccessfully: 'Beim Senden ist ein Fehler aufgetreten. Versuchen Sie es später erneut.',
+            btnPreview: 'Zurück',
+            btnNext: 'Nach vorne',
+            bntFinal: 'Fertigstellen',
+        },
     },
     ourWorks: {
         ua: {
@@ -111,7 +156,11 @@ const translates: SelectTranslate = {
         ru: {
             title: 'Наши работы',
             btnMore: 'Показать больше',
-        }
+        },
+        de: {
+            title: 'Unsere Arbeiten',
+            btnMore: 'Zeig mehr',
+        },
     },
 
     pageHome: {
@@ -122,7 +171,11 @@ const translates: SelectTranslate = {
         ru: {
             title: 'Салон мебели',
             subTitle: 'Покупая у производителя, вы экономите до 40% на стоимости мебели.',
-        }
+        },
+        de: {
+            title: 'Möbelsalon',
+            subTitle: 'Durch den Kauf beim Hersteller sparen Sie bis zu 40 % der Möbelkosten.',
+        },
     },
     pageKitchenModern: {
         ua: {
@@ -131,26 +184,41 @@ const translates: SelectTranslate = {
         ru: {
             title: 'Кухни в стиле модерн',
         },
+        de: {
+            title: 'Küchen im modernen Stil',
+        },
     },
     pageKitchenNaturalWood: {
         ua: {
             title: 'Кухні із натурального дерева',
-        }, ru: {
+        },
+        ru: {
             title: 'Кухни из натурального дерева',
+        },
+        de: {
+            title: 'Küchen aus Naturholz',
         },
     },
     pageKitchenProfileMDF: {
         ua: {
             title: 'Кухні із профільного МДФ',
-        }, ru: {
+        },
+        ru: {
             title: 'Кухни из профильного МДФ',
+        },
+        de: {
+            title: 'Küchen aus profiliertem MDF',
         },
     },
     pageMdfKitchens: {
         ua: {
             title: 'Кухні МДФ із фрезеруванням',
-        }, ru: {
+        },
+        ru: {
             title: 'Кухни МДФ с фрезерованием',
+        },
+        de: {
+            title: 'MDF-Küchen mit Fräsen',
         },
     }, pageWardrobesClassic: {
         ua: {
@@ -159,17 +227,28 @@ const translates: SelectTranslate = {
         ru: {
             title: 'Шкафы Классика',
         },
+        de: {
+            title: 'Klassische Kleiderschränke',
+        },
     }, pageWardrobesModern: {
         ua: {
             title: 'Шафи Модерн',
-        }, ru: {
+        },
+        ru: {
             title: 'Шкафы Модерн',
+        },
+        de: {
+            title: 'Moderne Kleiderschränke',
         },
     }, pageNotFound: {
         ua: {
             title: 'Сторінку не знайдено 404',
-        }, ru: {
+        },
+        ru: {
             title: 'Страница не найдена 404',
+        },
+        de: {
+            title: 'Seite nicht gefunden 404',
         },
     },
 

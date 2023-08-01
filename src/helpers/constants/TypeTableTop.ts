@@ -17,7 +17,10 @@ const typeTableTop: KitchenImgWithTranslate[] = [
             },
             ru: {
                 title: 'Столешница из ДСП'
-            }
+            },
+            de: {
+                title: 'Arbeitsplatte aus Spanplatte',
+            },
         }
     }, {
         img: img2,
@@ -28,7 +31,10 @@ const typeTableTop: KitchenImgWithTranslate[] = [
             },
             ru: {
                 title: 'Искусственный камень',
-            }
+            },
+            de: {
+                title: 'Gefälschter Stein',
+            },
         }
     }, {
         img: img3,
@@ -39,7 +45,10 @@ const typeTableTop: KitchenImgWithTranslate[] = [
             },
             ru: {
                 title: 'Компакт-плита (HPL)',
-            }
+            },
+            de: {
+                title: 'Kompaktplatte (HPL)',
+            },
         }
     }, {
         img: img4,
@@ -50,7 +59,10 @@ const typeTableTop: KitchenImgWithTranslate[] = [
             },
             ru: {
                 title: 'Деревянные столешницы',
-            }
+            },
+            de: {
+                title: 'Feinsteinzeug',
+            },
         }
     }, {
         img: img5,
@@ -61,7 +73,10 @@ const typeTableTop: KitchenImgWithTranslate[] = [
             },
             ru: {
                 title: 'Керамогранит',
-            }
+            },
+            de: {
+                title: 'Arbeitsplatten aus Holz',
+            },
         }
     }, {
         img: dontKnow,
@@ -72,7 +87,10 @@ const typeTableTop: KitchenImgWithTranslate[] = [
             },
             ru: {
                 title: 'Пока не знаю',
-            }
+            },
+            de: {
+                title: 'Weiß ich noch nicht',
+            },
         }
     },
 ]
@@ -81,6 +99,7 @@ const typeTableTopSelect: HelperSelectType = {
     title: {
         ua: 'Виберіть тип стільниці:',
         ru: 'Выберите тип столешницы:',
+        de: 'Wählen Sie die Art der Tischplatte:',
     },
     type: 'typeTableTop',
     typeHelper: {
