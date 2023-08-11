@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import styles from './ImageCompare.module.scss'
 import {ReactCompareSlider, ReactCompareSliderImage} from "react-compare-slider";
 import Container from "react-bootstrap/Container";
 import {Row} from "react-bootstrap";
@@ -11,6 +12,7 @@ import bf3 from '../../assets/before_after_work/couple-3/remont-kukhni-do-i-posl
 import af3 from '../../assets/before_after_work/couple-3/remont-kukhni-do-i-posle_5e33460e60e45.jpg'
 import bf4 from '../../assets/before_after_work/couple-4/remont-kukhni-do-i-posle_5e3326e5aab15.jpg'
 import af4 from '../../assets/before_after_work/couple-4/remont-kukhni-do-i-posle_5e3326fd679aa.jpg'
+import clsx from "clsx";
 
 function ImageCompare() {
     const [works] = useState([
@@ -29,7 +31,7 @@ function ImageCompare() {
         <Container fluid={'xxl'}>
             <Row xs={1} md={2}>
                 {works.map((value, index) => (
-                    <div key={index} className={'py-2'}>
+                    <div key={index} className={clsx('py-2', styles.mobilePadding)}>
                         <ReactCompareSlider
                             boundsPadding={40}
                             itemOne={<ReactCompareSliderImage src={value.before} srcSet={value.before}

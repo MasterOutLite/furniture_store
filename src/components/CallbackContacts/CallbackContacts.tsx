@@ -4,7 +4,7 @@ import clsx from "clsx";
 import ContactsMessenger from "../ContactsMessenger/ContactsMessenger";
 import YouTubeVideos from "../YouTubeVideos/YouTubeVideos";
 import useLanguageStore from "../../store/LanguageStore";
-import ImageCompare from "../BeforeAndAfterComparison/ImageCompare";
+import ImageCompare from "../ImageCompare/ImageCompare";
 
 function CallbackContacts() {
     const [language, translate] = useLanguageStore(state => [state.language, state.translate])

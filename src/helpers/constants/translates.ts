@@ -1,36 +1,35 @@
 import {SelectTranslate} from "../../type";
 
-
 const translates: SelectTranslate = {
     info: {
         ua: {
-            work: 'Працюємо щодня, з 10:00 до 20:00',
+            work: 'Працюємо щодня, з 8:00 до 18:00',
             title: 'Меблева фабрика "Verona"',
             legalDocuments: 'Юридичні документи',
         },
         ru: {
-            work: 'Работаем каждый день, с 10:00 до 20:00',
+            work: 'Работаем каждый день, с 8:00 до 18:00',
             title: 'Мебельная фабрика "Verona"',
             legalDocuments: 'Юридические документы',
         },
         de: {
-            work: 'Wir arbeiten jeden Tag von 10:00 bis 20:00 Uhr',
+            work: 'Wir arbeiten jeden Tag von 8:00 bis 18:00 Uhr',
             title: 'Möbelfabrik "Verona"',
-            legalDocuments: 'Legale Dokumente',
+            legalDocuments: 'Impressum',
         }
     },
     header: {
         ua: {
             from: 'Меблі від виробника',
-            work: 'Працюємо щодня з 10:00 до 20:00',
+            work: 'Працюємо щодня з 8:00 до 18:00',
         },
         ru: {
             from: 'Мебель от производителя',
-            work: 'Работаем ежедневно с 10:00 до 20:00',
+            work: 'Работаем ежедневно с 8:00 до 18:00',
         },
         de: {
             from: 'Möbel vom Hersteller',
-            work: 'Wir arbeiten jeden Tag von 10:00 bis 20:00 Uhr',
+            work: 'Wir arbeiten jeden Tag von 8:00 bis 18:00 Uhr',
         }
     },
     footer: {
@@ -66,19 +65,19 @@ const translates: SelectTranslate = {
             whyWe: 'Чому ми?',
             exampleWork: 'Зразок наших робіт',
             contacts: 'Зв\'яжися із нами',
-            video: 'Відео',
+            video: 'Відео огляд',
         },
         ru: {
             whyWe: 'Почему мы?',
             exampleWork: 'Образец наших работ',
             contacts: 'Свяжись с нами',
-            video: 'Видео',
+            video: 'Видео обзор',
         },
         de: {
             whyWe: 'Warum wir',
-            exampleWork: 'Eine Auswahl unserer Arbeiten',
+            exampleWork: 'Unsere Arbeiten',
             contacts: 'Kontaktiere uns',
-            video: 'Video',
+            video: 'Video rezension',
         },
     },
     callBack: {

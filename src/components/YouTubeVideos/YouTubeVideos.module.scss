@@ -1,13 +1,15 @@
 .video {
   height: 400px;
-  margin: 10px 0;
+  margin-bottom: 60px;
 
   @media (min-width: 576px) {
     height: 300px;
+    margin-bottom: 60px;
   }
 
   @media (min-width: 768px) {
     height: 190px;
+    margin:10px 0;
   }
 
   @media (min-width: 992px) {
