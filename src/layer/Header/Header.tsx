@@ -1,15 +1,16 @@
 import React, {useEffect, useState} from 'react';
 import styles from './Header.module.scss';
 import clsx from "clsx";
-import logo from '../../assets/logo.png';
+import logo from 'src/assets/logo.png';
+
 
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import {ButtonGroup, Col, Row, ToggleButton} from "react-bootstrap";
 import {useNavigate} from "react-router-dom";
-import {Language} from "../../type";
-import useLanguageStore from "../../store/LanguageStore";
+import {Language} from "src/type";
+import useLanguageStore from "src/store/LanguageStore";
 
 export interface HeaderProps {
     title?: string;
@@ -81,7 +82,7 @@ function Header({title, styleClass}: HeaderProps) {
                                     <div className={'fs-6'}>{translate.header[radioValue].work}</div>
                                 </Col>
                                 <Col className={clsx('py-3', 'my-auto')}>
-                                    <Nav.Link className={'fs-1'} onClick={goToHome}>
+                                    <Nav.Link className={clsx('fs-1', 'h-100')} onClick={goToHome}>
                                         <img src={logo} alt={'logo'} className={styles.img}/>
                                     </Nav.Link>
                                 </Col>

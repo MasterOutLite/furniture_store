@@ -7,10 +7,14 @@ function YouTubeVideos() {
 
     const [links] = useState<string[]>(
         [
-            "https://www.youtube.com/embed/z1ijS7aK_64",
-            'https://www.youtube.com/embed/F4Ht041LRqg',
-            'https://www.youtube.com/embed/lJn5qljtZE4',
-            'https://www.youtube.com/embed/gLYZupfTuzg'
+            'https://www.youtube.com/embed/Ruxq2bvTOQw?si=89kU09jHnwDitl5S',
+            'https://www.youtube.com/embed/m2_lIpVoal8?si=kEfFvYDBWBPGOb5F',
+            'https://www.youtube.com/embed/GgPT7ImnP9Y',
+            'https://www.youtube.com/embed/ITDmBjYR4GU',
+            'https://www.youtube.com/embed/sVdRqR7-jE0?si=qEaaFsoAklU20tDf',
+            'https://www.youtube.com/embed/RUxFNuo1HQw',
+            'https://www.youtube.com/embed/fu0VepJMydA?si=0hmyXtfuK1H3SS_B',
+            'https://www.youtube.com/embed/1nby72Kbo0A?si=lR51J4bp97hziS__',
         ]
     )
 
@@ -27,6 +31,8 @@ function YouTubeVideos() {
                         </div>
                     ))
                 }
+
+
             </Row>
         </Container>
     );
