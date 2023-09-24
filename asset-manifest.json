@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a6ecdea6.css",
-    "main.js": "/static/js/main.138ff3ad.js",
+    "main.css": "/static/css/main.ad42817a.css",
+    "main.js": "/static/js/main.fd8b50a0.js",
     "static/media/IMG_20160219_120632.jpg": "/static/media/IMG_20160219_120632.bf0bc84439126916fddd.jpg",
     "static/media/45647.jpg": "/static/media/45647.e14bcb08f958703d4c12.jpg",
     "static/media/24_1.jpg": "/static/media/24_1.13c110a0912a504f9134.jpg",
@@ -24,6 +24,7 @@
     "static/media/21.jpg": "/static/media/21.3f45f6234183100be38c.jpg",
     "static/media/_DSC2583.jpg": "/static/media/_DSC2583.66b4ba8386fe6155609b.jpg",
     "static/media/227__2.jpg": "/static/media/227__2.be9b752d5103a25c6131.jpg",
+    "static/media/remont-kukhni-do-i-posle_5e332c9bc241f.jpg": "/static/media/remont-kukhni-do-i-posle_5e332c9bc241f.dc3fad1185394f560f67.jpg",
     "static/media/14.jpg": "/static/media/14.00d8b1d3dd7b3ad27b59.jpg",
     "static/media/image-0-02-05-b83857.jpg": "/static/media/image-0-02-05-b83857.bfbf2f406611b8615f5d.jpg",
     "static/media/10_2.jpg": "/static/media/10_2.b1121466e08ee39f9070.jpg",
@@ -65,6 +66,7 @@
     "static/media/_.jpg": "/static/media/_.6158272be9ca72a3c02c.jpg",
     "static/media/743.jpg": "/static/media/743.941958f3bafb826e1519.jpg",
     "static/media/3457457.jpg": "/static/media/3457457.6ddbfada9351e61a8f34.jpg",
+    "static/media/remont-kukhni-do-i-posle_5e3327a7d120d.jpg": "/static/media/remont-kukhni-do-i-posle_5e3327a7d120d.19006a236df0d820b326.jpg",
     "static/media/_viber_2019-06-12_12.jpg": "/static/media/_viber_2019-06-12_12.704c91ea79f47d9f3ae9.jpg",
     "static/media/652.jpg": "/static/media/652.6ca0debe4d183acd2fc2.jpg",
     "static/media/_DSC1975.jpg": "/static/media/_DSC1975.595037c7aec6a5881caa.jpg",
@@ -93,9 +95,11 @@
     "static/media/36322.jpg": "/static/media/36322.848cd0224a6e91dafd8c.jpg",
     "static/media/79879.jpg": "/static/media/79879.5bd7f1310134d0ca8356.jpg",
     "static/media/53.jpg": "/static/media/53.91913abb5af5269d85ea.jpg",
+    "static/media/remont-kukhni-do-i-posle_5e33460e60e45.jpg": "/static/media/remont-kukhni-do-i-posle_5e33460e60e45.f96a24b17ff2381fe0c9.jpg",
     "static/media/wardrobe-modern.jpg": "/static/media/wardrobe-modern.211429a967074a0645bb.jpg",
     "static/media/_DSC1026.jpg": "/static/media/_DSC1026.46aadaca100911c5a4ce.jpg",
     "static/media/101__1.jpg": "/static/media/101__1.0e8d7dfba08e8b8b8f43.jpg",
+    "static/media/remont-kukhni-do-i-posle_5e332793406b5.jpg": "/static/media/remont-kukhni-do-i-posle_5e332793406b5.50a7a12e008362774ddf.jpg",
     "static/media/784.jpg": "/static/media/784.14a216c2cc0e7a6bf7bd.jpg",
     "static/media/shkaf-kupe-s-fotopec.jpg": "/static/media/shkaf-kupe-s-fotopec.8226dbd645be2c3cee7f.jpg",
     "static/media/4363.jpg": "/static/media/4363.7dde02379102dac6843f.jpg",
@@ -128,18 +132,23 @@
     "static/media/_DSC1943.jpg": "/static/media/_DSC1943.4db5401e2714fa9abfc0.jpg",
     "static/media/_DSC0277.jpg": "/static/media/_DSC0277.204e7cd3e52f133e2576.jpg",
     "static/media/225.jpg": "/static/media/225.ed952350209b61ab2881.jpg",
+    "static/media/remont-kukhni-do-i-posle_5e332ca93caa2.jpg": "/static/media/remont-kukhni-do-i-posle_5e332ca93caa2.e933635bff97a06206fc.jpg",
     "static/media/222.jpg": "/static/media/222.d9fb78f219a393940985.jpg",
     "static/media/19__2_-_.jpg": "/static/media/19__2_-_.8a0a4086820d869fed72.jpg",
     "static/media/2_2.jpg": "/static/media/2_2.10e0deb0a6f57d4ee1e4.jpg",
     "static/media/75743.jpeg": "/static/media/75743.c1853321a570b3701746.jpeg",
     "static/media/ostrov.jpg": "/static/media/ostrov.e1e949f106cf9e2e7d17.jpg",
+    "static/media/remont-kukhni-do-i-posle_5e3326fd679aa.jpg": "/static/media/remont-kukhni-do-i-posle_5e3326fd679aa.d7216f409ad716b9aa02.jpg",
     "static/media/__.jpg": "/static/media/__.9f3f270a6aeed3070b58.jpg",
+    "static/media/remont-kukhni-do-i-posle_5e3326e5aab15.jpg": "/static/media/remont-kukhni-do-i-posle_5e3326e5aab15.b827ccf362fbd556a7c5.jpg",
     "static/media/mdf-milling.jpg": "/static/media/mdf-milling.227352671bf67ad7fd54.jpg",
     "static/media/0-02-05-4073cec11411.jpg": "/static/media/0-02-05-4073cec11411.00e4bf61f24e685b8953.jpg",
     "static/media/7.jpg": "/static/media/7.41db006a618ac6cd52e6.jpg",
     "static/media/60_.jpg": "/static/media/60_.9a56247f37803459e296.jpg",
     "static/media/4__2.jpg": "/static/media/4__2.e6bd49827577e0ad9f28.jpg",
     "static/media/43__.jpg": "/static/media/43__.1205a4e8ab2453c05bc7.jpg",
+    "static/media/logo.png": "/static/media/logo.bbcaf3ad171ab5c27f59.png",
+    "static/media/remont-kukhni-do-i-posle_5e3345fb53e81.jpg": "/static/media/remont-kukhni-do-i-posle_5e3345fb53e81.dbc493627a1dd7123115.jpg",
     "static/media/89_araks_2.jpg": "/static/media/89_araks_2.c90721ede01b2c7de378.jpg",
     "static/media/49__1.jpg": "/static/media/49__1.99457685d3f913dc8c41.jpg",
     "static/media/89_araks_1.jpg": "/static/media/89_araks_1.49c4923e2b6f1de010af.jpg",
@@ -222,11 +231,11 @@
     "static/media/wooden_table_tops.jpeg": "/static/media/wooden_table_tops.aa9c930e88c11edb6d56.jpeg",
     "static/media/ceramic_granite.jpg": "/static/media/ceramic_granite.25f83f08b6eda0ae4968.jpg",
     "index.html": "/index.html",
-    "main.a6ecdea6.css.map": "/static/css/main.a6ecdea6.css.map",
-    "main.138ff3ad.js.map": "/static/js/main.138ff3ad.js.map"
+    "main.ad42817a.css.map": "/static/css/main.ad42817a.css.map",
+    "main.fd8b50a0.js.map": "/static/js/main.fd8b50a0.js.map"
   },
   "entrypoints": [
-    "static/css/main.a6ecdea6.css",
-    "static/js/main.138ff3ad.js"
+    "static/css/main.ad42817a.css",
+    "static/js/main.fd8b50a0.js"
   ]
 }
