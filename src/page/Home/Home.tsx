@@ -1,9 +1,9 @@
 import React from 'react';
 
-import {StaticLayer} from "../../layer";
-import CatalogFurniture from "../../components/CatalogFurniture/CatalogFurniture";
+import {StaticLayer} from "src/layer";
+import CatalogFurniture from "src/components/CatalogFurniture/CatalogFurniture";
 import clsx from "clsx";
-import useLanguageStore from "../../store/LanguageStore";
+import useLanguageStore from "src/store/LanguageStore";
 
 function Home() {
     const [language, translate] = useLanguageStore(state => [state.language, state.translate]);

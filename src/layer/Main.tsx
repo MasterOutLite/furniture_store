@@ -2,8 +2,8 @@ import React, {ReactNode} from 'react';
 import Header from "./Header/Header";
 import Footer from "./Footer/Footer";
 import clsx from "clsx";
-import ToastProvider from "../components/ToastProvider/ToastProvider";
-import ModalProvider from "../components/ModalProvider/ModalProvider";
+import ToastProvider from "src/components/ToastProvider/ToastProvider";
+import ModalProvider from "src/components/ModalProvider/ModalProvider";
 
 export interface MainProps {
     title?: string;

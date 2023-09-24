@@ -1,7 +1,7 @@
 import React, {ChangeEvent} from 'react';
 import {Form, Stack} from "react-bootstrap";
-import {Answer, Question} from "../../../type";
-import useLanguageStore from "../../../store/LanguageStore";
+import {Answer, Question} from "src/type";
+import useLanguageStore from "src/store/LanguageStore";
 
 export interface QuestionProps {
     show: Question[];

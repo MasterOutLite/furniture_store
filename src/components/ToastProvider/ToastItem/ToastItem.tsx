@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {Toast} from "react-bootstrap";
-import useToastStore from "../../../store/ToastStore";
-import {ToastItemType} from "../../../type";
+import useToastStore from "src/store/ToastStore";
+import {ToastItemType} from "src/type";
 
 
 function ToastItem({body, title, id, bg, data}: ToastItemType) {

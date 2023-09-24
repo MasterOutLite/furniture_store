@@ -1,11 +1,11 @@
-import img1 from "../../assets/type_table_top/chipboard_table_top.jpg";
-import img2 from "../../assets/type_table_top/artificial_stone.jpeg";
-import img3 from "../../assets/type_table_top/compact_plate.jpg";
-import img4 from "../../assets/type_table_top/wooden_table_tops.jpeg";
-import img5 from "../../assets/type_table_top/ceramic_granite.jpg";
-import dontKnow from "../../assets/pngtree-gray-questio.jpg";
+import img1 from "src/assets/type_table_top/chipboard_table_top.jpg";
+import img2 from "src/assets/type_table_top/artificial_stone.jpeg";
+import img3 from "src/assets/type_table_top/compact_plate.jpg";
+import img4 from "src/assets/type_table_top/wooden_table_tops.jpeg";
+import img5 from "src/assets/type_table_top/ceramic_granite.jpg";
+import dontKnow from "src/assets/pngtree-gray-questio.jpg";
 
-import {HelperSelectType, KitchenImgWithTranslate} from "../../type";
+import {HelperSelectType, KitchenImgWithTranslate} from "src/type";
 
 const typeTableTop: KitchenImgWithTranslate[] = [
     {

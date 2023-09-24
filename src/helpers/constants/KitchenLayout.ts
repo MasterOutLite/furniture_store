@@ -1,10 +1,10 @@
-import img1 from "../..//assets/kitchen_layout/pryamaya.jpg";
-import img2 from "../..//assets/kitchen_layout/ugol.jpg";
-import img3 from "../..//assets/kitchen_layout/P-obraz.jpg";
-import img4 from "../..//assets/kitchen_layout/ostrov.jpg";
-import img5 from "../..//assets/kitchen_layout/af70ddae072e3bf68a77.jpg";
-import dontKnow from "../..//assets/pngtree-gray-questio.jpg";
-import {HelperSelectType, KitchenImgWithTranslate} from "../../type";
+import img1 from "src/assets/kitchen_layout/pryamaya.jpg";
+import img2 from "src/assets/kitchen_layout/ugol.jpg";
+import img3 from "src/assets/kitchen_layout/P-obraz.jpg";
+import img4 from "src/assets/kitchen_layout/ostrov.jpg";
+import img5 from "src/assets/kitchen_layout/af70ddae072e3bf68a77.jpg";
+import dontKnow from "src/assets/pngtree-gray-questio.jpg";
+import {HelperSelectType, KitchenImgWithTranslate} from "src/type";
 
 
 const kitchenLayout: KitchenImgWithTranslate[] = [

@@ -1,4 +1,4 @@
-import {HelperSelectType} from "../../type";
+import {HelperSelectType} from "src/type";
 
 
 const sizeKitchen: HelperSelectType = {

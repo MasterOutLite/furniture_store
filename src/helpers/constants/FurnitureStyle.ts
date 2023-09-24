@@ -1,10 +1,10 @@
-import img1 from "../../assets/kitchen-modern.jpg";
-import img2 from "../../assets/mdf-milling.jpg";
-import img3 from "../../assets/profile-mdf.jpg";
-import img4 from "../../assets/naturale-wood.jpg";
-import img5 from "../../assets/wardrobe-classicka.jpg";
-import img6 from "../../assets/wardrobe-modern.jpg";
-import {FurnitureStyle} from "../../type";
+import img1 from "src/assets/kitchen-modern.jpg";
+import img2 from "src/assets/mdf-milling.jpg";
+import img3 from "src/assets/profile-mdf.jpg";
+import img4 from "src/assets/naturale-wood.jpg";
+import img5 from "src/assets/wardrobe-classicka.jpg";
+import img6 from "src/assets/wardrobe-modern.jpg";
+import {FurnitureStyle} from "src/type";
 
 
 const furnitureStyle: FurnitureStyle[] = [

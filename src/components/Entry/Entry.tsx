@@ -1,6 +1,6 @@
 import React, {ReactNode} from 'react';
 import Container from "react-bootstrap/Container";
-import imgs from "../../assets/45647.jpg";
+import imgs from "src/assets/45647.jpg";
 import clsx from "clsx";
 import styles from "./Entry.module.scss";
 

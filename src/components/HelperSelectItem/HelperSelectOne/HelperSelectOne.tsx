@@ -1,5 +1,5 @@
 import React from 'react';
-import {Answer} from "../../../type";
+import {Answer} from "src/type";
 import {Form, Stack} from "react-bootstrap";
 
 export interface HelperSelectOneProps {

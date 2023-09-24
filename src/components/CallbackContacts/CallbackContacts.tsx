@@ -1,10 +1,10 @@
 import React from 'react';
 import {Tab, Tabs} from "react-bootstrap";
 import clsx from "clsx";
-import ContactsMessenger from "../ContactsMessenger/ContactsMessenger";
-import YouTubeVideos from "../YouTubeVideos/YouTubeVideos";
-import useLanguageStore from "../../store/LanguageStore";
-import ImageCompare from "../ImageCompare/ImageCompare";
+import ContactsMessenger from "src/components/ContactsMessenger/ContactsMessenger";
+import YouTubeVideos from "src/components/YouTubeVideos/YouTubeVideos";
+import useLanguageStore from "src/store/LanguageStore";
+import ImageCompare from "src/components/ImageCompare/ImageCompare";
 
 function CallbackContacts() {
     const [language, translate] = useLanguageStore(state => [state.language, state.translate])

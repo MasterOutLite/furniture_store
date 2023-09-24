@@ -2,11 +2,11 @@ import React, {useMemo, useState} from 'react';
 import styles from './OurWorks.module.scss'
 
 import Container from "react-bootstrap/Container";
-import Title from "../Title/Title";
-import {KitchenImg} from "../../type";
+import Title from "src/components/Title/Title";
+import {KitchenImg} from "src/type";
 import {Button, Carousel, Modal, Row} from "react-bootstrap";
 import clsx from "clsx";
-import useLanguageStore from "../../store/LanguageStore";
+import useLanguageStore from "src/store/LanguageStore";
 
 export interface OurWorksProps {
     kitchens: KitchenImg[];

@@ -4,14 +4,14 @@ import {ReactCompareSlider, ReactCompareSliderImage} from "react-compare-slider"
 import Container from "react-bootstrap/Container";
 import {Row} from "react-bootstrap";
 
-import bf1 from '../../assets/before_after_work/couple-1/remont-kukhni-do-i-posle_5e332793406b5.jpg'
-import af1 from '../../assets/before_after_work/couple-1/remont-kukhni-do-i-posle_5e3327a7d120d.jpg'
-import bf2 from '../../assets/before_after_work/couple-2/remont-kukhni-do-i-posle_5e332c9bc241f.jpg'
-import af2 from '../../assets/before_after_work/couple-2/remont-kukhni-do-i-posle_5e332ca93caa2.jpg'
-import bf3 from '../../assets/before_after_work/couple-3/remont-kukhni-do-i-posle_5e3345fb53e81.jpg'
-import af3 from '../../assets/before_after_work/couple-3/remont-kukhni-do-i-posle_5e33460e60e45.jpg'
-import bf4 from '../../assets/before_after_work/couple-4/remont-kukhni-do-i-posle_5e3326e5aab15.jpg'
-import af4 from '../../assets/before_after_work/couple-4/remont-kukhni-do-i-posle_5e3326fd679aa.jpg'
+import bf1 from 'src/assets/before_after_work/couple-1/remont-kukhni-do-i-posle_5e332793406b5.jpg'
+import af1 from 'src/assets/before_after_work/couple-1/remont-kukhni-do-i-posle_5e3327a7d120d.jpg'
+import bf2 from 'src/assets/before_after_work/couple-2/remont-kukhni-do-i-posle_5e332c9bc241f.jpg'
+import af2 from 'src/assets/before_after_work/couple-2/remont-kukhni-do-i-posle_5e332ca93caa2.jpg'
+import bf3 from 'src/assets/before_after_work/couple-3/remont-kukhni-do-i-posle_5e3345fb53e81.jpg'
+import af3 from 'src/assets/before_after_work/couple-3/remont-kukhni-do-i-posle_5e33460e60e45.jpg'
+import bf4 from 'src/assets/before_after_work/couple-4/remont-kukhni-do-i-posle_5e3326e5aab15.jpg'
+import af4 from 'src/assets/before_after_work/couple-4/remont-kukhni-do-i-posle_5e3326fd679aa.jpg'
 import clsx from "clsx";
 
 function ImageCompare() {

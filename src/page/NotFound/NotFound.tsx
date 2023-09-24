@@ -1,7 +1,7 @@
 import React from 'react';
-import {Main} from "../../layer";
-import Title from "../../components/Title/Title";
-import useLanguageStore from "../../store/LanguageStore";
+import {Main} from "src/layer";
+import Title from "src/components/Title/Title";
+import useLanguageStore from "src/store/LanguageStore";
 
 function NotFound() {
     const [language, translate] = useLanguageStore(state => [state.language, state.translate]);

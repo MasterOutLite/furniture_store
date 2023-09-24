@@ -2,7 +2,7 @@ import React, {memo, useEffect, useState} from 'react';
 import {Col} from "react-bootstrap";
 import styles from "./SelectImg.module.scss";
 import clsx from "clsx";
-import {KitchenImg} from "../../type";
+import {KitchenImg} from "src/type";
 
 export interface SelectImgProps {
     id?: number;

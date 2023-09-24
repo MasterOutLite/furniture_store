@@ -2,8 +2,8 @@ import React from 'react';
 import styles from './StaticButton.module.scss'
 import clsx from "clsx";
 import {Button, Modal} from "react-bootstrap";
-import useModalStore from "../../store/ModalStore";
-import CallBack from "../CallBack/CallBack";
+import useModalStore from "src/store/ModalStore";
+import CallBack from "src/components/CallBack/CallBack";
 
 function StaticButton() {
 

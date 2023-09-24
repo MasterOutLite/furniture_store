@@ -2,7 +2,7 @@ import React from 'react';
 import Container from "react-bootstrap/Container";
 import clsx from "clsx";
 import Nav from "react-bootstrap/Nav";
-import useLanguageStore from "../../store/LanguageStore";
+import useLanguageStore from "src/store/LanguageStore";
 import {Button} from "react-bootstrap";
 import {useNavigate} from "react-router-dom";
 

@@ -1,9 +1,9 @@
 import React from 'react';
-import {StaticLayer} from "../../layer";
-import OurWorks from "../../components/OurWorks/OurWorks";
-import wardrobesModern from "../../helpers/kitchens/WardrobesModern";
-import img from '../../assets/wardrobe-modern.jpg'
-import useLanguageStore from "../../store/LanguageStore";
+import {StaticLayer} from "src/layer";
+import OurWorks from "src/components/OurWorks/OurWorks";
+import wardrobesModern from "src/helpers/kitchens/WardrobesModern";
+import img from 'src/assets/wardrobe-modern.jpg'
+import useLanguageStore from "src/store/LanguageStore";
 
 function WardrobesModern() {
     const [language, translate] = useLanguageStore(state => [state.language, state.translate]);

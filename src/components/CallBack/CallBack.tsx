@@ -3,12 +3,12 @@ import {Button, Form} from 'react-bootstrap';
 import styles from './CallBack.module.scss'
 import clsx from "clsx";
 
-import {isPhoneNumber} from '../../helpers/check'
-import {post} from "../../helpers/api";
-import {urlCallBack} from "../../helpers/constant";
-import useToastStore from "../../store/ToastStore";
-import {VariantBg} from "../../type";
-import useLanguageStore from "../../store/LanguageStore";
+import {isPhoneNumber} from 'src/helpers/check'
+import {post} from "src/helpers/api";
+import {urlCallBack} from "src/helpers/constant";
+import useToastStore from "src/store/ToastStore";
+import {VariantBg} from "src/type";
+import useLanguageStore from "src/store/LanguageStore";
 
 export interface CallBackProps {
     cssClass?: string;

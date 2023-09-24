@@ -1,13 +1,13 @@
-import img1 from "../../assets/kitchen_style/classika.jpg";
-import img2 from "../../assets/kitchen_style/modern.jpeg";
-import img3 from "../../assets/kitchen_style/provans.jpg";
-import img4 from "../../assets/kitchen_style/hi-tec.jpeg";
-import img5 from "../../assets/kitchen_style/neo-classika.jpg";
-import img6 from "../../assets/kitchen_style/loft.jpeg";
-import img7 from "../../assets/kitchen_style/minimalizm.jpeg";
-import dontKnow from "../../assets/pngtree-gray-questio.jpg";
+import img1 from "src/assets/kitchen_style/classika.jpg";
+import img2 from "src/assets/kitchen_style/modern.jpeg";
+import img3 from "src/assets/kitchen_style/provans.jpg";
+import img4 from "src/assets/kitchen_style/hi-tec.jpeg";
+import img5 from "src/assets/kitchen_style/neo-classika.jpg";
+import img6 from "src/assets/kitchen_style/loft.jpeg";
+import img7 from "src/assets/kitchen_style/minimalizm.jpeg";
+import dontKnow from "src/assets/pngtree-gray-questio.jpg";
 
-import {HelperSelectType, KitchenImgWithTranslate} from "../../type";
+import {HelperSelectType, KitchenImgWithTranslate} from "src/type";
 
 const kitchenStyle: KitchenImgWithTranslate[] = [
     {

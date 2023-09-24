@@ -1,8 +1,8 @@
 import React from 'react';
-import {Main} from "../../layer";
-import ContactsMessenger from "../../components/ContactsMessenger/ContactsMessenger";
+import {Main} from "src/layer";
+import ContactsMessenger from "src/components/ContactsMessenger/ContactsMessenger";
 import {Image, Row} from "react-bootstrap";
-import img from '../../assets/wardrobe-classicka.jpg'
+import img from 'src/assets/wardrobe-classicka.jpg'
 import Container from "react-bootstrap/Container";
 
 function LegalDocuments() {

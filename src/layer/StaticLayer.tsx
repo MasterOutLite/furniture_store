@@ -1,10 +1,10 @@
 import React, {ReactNode, useEffect} from 'react';
 import {Main} from "./index";
-import Entry from "../components/Entry/Entry";
-import HelperSelect from "../components/HelperSelect/HelperSelect";
-import Info from "../components/Info/Info";
-import CallbackContacts from "../components/CallbackContacts/CallbackContacts";
-import StaticButton from "../components/StaticButton/StaticButton";
+import Entry from "src/components/Entry/Entry";
+import HelperSelect from "src/components/HelperSelect/HelperSelect";
+import Info from "src/components/Info/Info";
+import CallbackContacts from "src/components/CallbackContacts/CallbackContacts";
+import StaticButton from "src/components/StaticButton/StaticButton";
 
 export interface StaticLayerProps {
     children?: ReactNode;

@@ -1,7 +1,7 @@
 import React from 'react';
 import {ToastContainer} from "react-bootstrap";
 import ToastItem from "./ToastItem/ToastItem";
-import useToastStore from "../../store/ToastStore";
+import useToastStore from "src/store/ToastStore";
 import clsx from "clsx";
 
 function ToastProvider() {

@@ -1,11 +1,11 @@
-import img1 from "../../assets/kitchen_material/emal.jpg";
-import img2 from "../../assets/kitchen_material/mdf.jpg";
-import img3 from "../../assets/kitchen_material/shpon.jpg";
-import img4 from "../../assets/kitchen_material/pvh.jpg";
-import img5 from "../../assets/kitchen_material/plastik.jpg";
-import dontKnow from "../../assets/pngtree-gray-questio.jpg";
+import img1 from "src/assets/kitchen_material/emal.jpg";
+import img2 from "src/assets/kitchen_material/mdf.jpg";
+import img3 from "src/assets/kitchen_material/shpon.jpg";
+import img4 from "src/assets/kitchen_material/pvh.jpg";
+import img5 from "src/assets/kitchen_material/plastik.jpg";
+import dontKnow from "src/assets/pngtree-gray-questio.jpg";
 
-import {HelperSelectType, KitchenImgWithTranslate} from "../../type";
+import {HelperSelectType, KitchenImgWithTranslate} from "src/type";
 
 const kitchenMaterial: KitchenImgWithTranslate[] = [
     {

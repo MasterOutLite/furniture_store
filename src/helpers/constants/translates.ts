@@ -1,4 +1,4 @@
-import {SelectTranslate} from "../../type";
+import {SelectTranslate} from "src/type";
 
 const translates: SelectTranslate = {
     info: {

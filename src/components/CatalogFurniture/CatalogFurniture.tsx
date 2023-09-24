@@ -2,19 +2,17 @@ import React, {useState} from 'react';
 import styles from './CatalogFurniture.module.scss'
 import {Button, Col, Row} from "react-bootstrap";
 
-import {furnitureStyleItems} from "../../helpers/constant";
-import Title from "../Title/Title";
+import {furnitureStyleItems} from "src/helpers/constant";
+import Title from "src/components/Title/Title";
 import {useNavigate} from "react-router-dom";
-import {FurnitureStyle} from "../../type";
-import useLanguageStore from "../../store/LanguageStore";
+import {FurnitureStyle} from "src/type";
+import useLanguageStore from "src/store/LanguageStore";
 
 function CatalogFurniture() {
     const navigate = useNavigate();
 
     const [language, translate] = useLanguageStore(state => [state.language, state.translate])
     const [kitchen] = useState<FurnitureStyle[]>(furnitureStyleItems);
-//       className={styles.itemList}
-    //   className={styles.itemContainer}
 
     const goTo = (href: string) => {
         navigate(href);

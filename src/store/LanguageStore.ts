@@ -1,6 +1,6 @@
 import {create} from "zustand";
-import {Language, SelectTranslate} from "../type";
-import translates from "../helpers/constants/translates";
+import {Language, SelectTranslate} from "src/type";
+import translates from "src/helpers/constants/translates";
 
 
 interface LanguageStore {

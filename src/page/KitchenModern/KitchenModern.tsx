@@ -1,9 +1,9 @@
 import React from 'react';
-import {StaticLayer} from "../../layer";
-import OurWorks from "../../components/OurWorks/OurWorks";
-import kitchenModern from "../../helpers/kitchens/KitchenModern";
-import img from '../../assets/kitchen-modern.jpg'
-import useLanguageStore from "../../store/LanguageStore";
+import {StaticLayer} from "src/layer";
+import OurWorks from "src/components/OurWorks/OurWorks";
+import kitchenModern from "src/helpers/kitchens/KitchenModern";
+import img from 'src/assets/kitchen-modern.jpg'
+import useLanguageStore from "src/store/LanguageStore";
 
 function KitchenModern() {
     const [language, translate] = useLanguageStore(state => [state.language, state.translate]);

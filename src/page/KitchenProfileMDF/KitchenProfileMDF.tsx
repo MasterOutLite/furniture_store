@@ -1,9 +1,9 @@
 import React from 'react';
-import {StaticLayer} from "../../layer";
-import OurWorks from "../../components/OurWorks/OurWorks";
-import kitchenProfileMDF from "../../helpers/kitchens/KitchenProfileMDF";
-import img from '../../assets/profile-mdf.jpg'
-import useLanguageStore from "../../store/LanguageStore";
+import {StaticLayer} from "src/layer";
+import OurWorks from "src/components/OurWorks/OurWorks";
+import kitchenProfileMDF from "src/helpers/kitchens/KitchenProfileMDF";
+import img from 'src/assets/profile-mdf.jpg'
+import useLanguageStore from "src/store/LanguageStore";
 
 function KitchenProfileMDF() {
     const [language, translate] = useLanguageStore(state => [state.language, state.translate]);

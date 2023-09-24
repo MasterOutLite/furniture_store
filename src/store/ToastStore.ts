@@ -1,5 +1,5 @@
 import {create} from 'zustand'
-import {ToastItemType, VariantBg} from "../type";
+import {ToastItemType, VariantBg} from "src/type";
 
 interface ToastStore {
     toasts: ToastItemType[];

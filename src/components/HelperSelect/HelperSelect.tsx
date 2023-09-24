@@ -12,16 +12,16 @@ import {
     typeTableTopSelect,
     urlCallBack,
     whenNeededKitchen
-} from '../../helpers/constant'
-import {Answer, HelperSelectType, VariantBg} from "../../type";
-import callBackInfo from "../../helpers/constants/CallBackInfo";
-import {isPhoneNumber} from "../../helpers/check";
-import HelperSelectImg from "../HelperSelectItem/HelperSelectImg/HelperSelectImg";
-import HelperQuestions from "../HelperSelectItem/Question/HelperQuestions";
-import HelperSelectOne from "../HelperSelectItem/HelperSelectOne/HelperSelectOne";
-import {post} from "../../helpers/api";
-import useToastStore from "../../store/ToastStore";
-import useLanguageStore from "../../store/LanguageStore";
+} from 'src/helpers/constant'
+import {Answer, HelperSelectType, VariantBg} from "src/type";
+import callBackInfo from "src/helpers/constants/CallBackInfo";
+import {isPhoneNumber} from "src/helpers/check";
+import HelperSelectImg from "src/components/HelperSelectItem/HelperSelectImg/HelperSelectImg";
+import HelperQuestions from "src/components/HelperSelectItem/Question/HelperQuestions";
+import HelperSelectOne from "src/components/HelperSelectItem/HelperSelectOne/HelperSelectOne";
+import {post} from "src/helpers/api";
+import useToastStore from "src/store/ToastStore";
+import useLanguageStore from "src/store/LanguageStore";
 
 function HelperSelect() {
     const addToast = useToastStore(state => state.addToast);

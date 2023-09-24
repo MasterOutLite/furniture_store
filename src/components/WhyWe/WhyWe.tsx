@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import styles from './WhyWe.module.scss'
 import Container from "react-bootstrap/Container";
 import {Col, Row} from "react-bootstrap";
-import CallBack from "../CallBack/CallBack";
+import CallBack from "src/components/CallBack/CallBack";
 import clsx from "clsx";
 
 function WhyWe() {

@@ -2,8 +2,8 @@ import React, {useEffect, useState} from 'react';
 import {Col, Row} from "react-bootstrap";
 import styles from "./HelperSelectImg.module.scss";
 import clsx from "clsx";
-import {Answer, KitchenImgWithTranslate} from "../../../type";
-import useLanguageStore from "../../../store/LanguageStore";
+import {Answer, KitchenImgWithTranslate} from "src/type";
+import useLanguageStore from "src/store/LanguageStore";
 
 export interface SelectImgProps {
     type: string;

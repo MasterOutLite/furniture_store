@@ -2,7 +2,7 @@ export interface KitchenImg {
     img: string;
     title: string;
 
-};
+}
 
 export interface KitchenImgWithTranslate extends KitchenImg {
     translate: Translate;
