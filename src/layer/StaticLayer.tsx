@@ -3,7 +3,7 @@ import {Main} from "./index";
 import Entry from "src/components/Entry/Entry";
 import HelperSelect from "src/components/HelperSelect/HelperSelect";
 import Info from "src/components/Info/Info";
-import CallbackContacts from "src/components/CallbackContacts/CallbackContacts";
+import TabsInfo from "src/components/TabsInfo/TabsInfo";
 import StaticButton from "src/components/StaticButton/StaticButton";
 
 export interface StaticLayerProps {
@@ -24,7 +24,7 @@ function StaticLayer({children, previewImg, previewTitle, previewTitleChildren}:
             <Entry img={previewImg} children={previewTitleChildren} title={previewTitle}/>
             <HelperSelect/>
             {children}
-            <CallbackContacts/>
+            <TabsInfo/>
             <Info/>
             {/*<Message/>*/}
             <StaticButton/>

@@ -4,17 +4,17 @@ const translates: SelectTranslate = {
     info: {
         ua: {
             work: 'Працюємо щодня, з 8:00 до 18:00',
-            title: 'Меблева фабрика "Möbel von Shah"',
+            title: 'Меблева фабрика "MvS"',
             legalDocuments: 'Юридичні документи',
         },
         ru: {
             work: 'Работаем каждый день, с 8:00 до 18:00',
-            title: 'Мебельная фабрика "Möbel von Shah"',
+            title: 'Мебельная фабрика "MvS"',
             legalDocuments: 'Юридические документы',
         },
         de: {
             work: 'Wir arbeiten jeden Tag von 8:00 bis 18:00 Uhr',
-            title: 'Möbelfabrik "Möbel von Shah"',
+            title: 'Möbelfabrik "MvS"',
             legalDocuments: 'Impressum',
         }
     },

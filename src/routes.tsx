@@ -10,42 +10,53 @@ import WardrobesClassic from "./page/WardrobesClassic/WardrobesClassic";
 import WardrobesModern from "./page/WardrobesModern/WardrobesModern";
 import LegalDocuments from "./page/LegalDocuments/LegalDocuments";
 
+export enum RefLink {
+    home = '/',
+    MDFKitchens = '/MDFKitchens',
+    KitchenModern = '/KitchenModern',
+    KitchenNaturalWood='/KitchenNaturalWood',
+    KitchenProfileMDF='/KitchenProfileMDF',
+    WardrobesClassic='/WardrobesClassic',
+    WardrobesModern='/WardrobesModern',
+    LegalDocuments='/LegalDocuments',
+}
 
 
 const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <Home />,
-  },
-  {
-    path: '/MDFKitchens',
-    element: <MDFKitchens />,
-  }, {
-    path: '/KitchenModern',
-    element: <KitchenModern />,
-  }, {
-    path: '/KitchenNaturalWood',
-    element: <KitchenNaturalWood />,
-  },{
-    path: '/KitchenProfileMDF',
-    element: <KitchenProfileMDF />,
-  },{
-    path: '/WardrobesClassic',
-    element: <WardrobesClassic />,
-  },{
-    path: '/WardrobesModern',
-    element: <WardrobesModern />,
-  },{
-    path: '/LegalDocuments',
-    element: <LegalDocuments />,
-  },
-  {
-    path: '*',
-    element: <NotFound />,
-  },
+    {
+        path: '/',
+        element: <Home/>,
+    },
+    {
+        path: '/MDFKitchens',
+        element: <MDFKitchens/>,
+    }, {
+        path: '/KitchenModern',
+        element: <KitchenModern/>,
+    }, {
+        path: '/KitchenNaturalWood',
+        element: <KitchenNaturalWood/>,
+    }, {
+        path: '/KitchenProfileMDF',
+        element: <KitchenProfileMDF/>,
+    }, {
+        path: '/WardrobesClassic',
+        element: <WardrobesClassic/>,
+    }, {
+        path: '/WardrobesModern',
+        element: <WardrobesModern/>,
+    }, {
+        path: '/LegalDocuments',
+        element: <LegalDocuments/>,
+    },
+    {
+        path: '*',
+        element: <NotFound/>,
+    },
 ]);
 
 function Routes() {
-  return <RouterProvider router={router} />;
+    return <RouterProvider router={router}/>;
 }
+
 export default memo(Routes);

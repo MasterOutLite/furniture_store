@@ -6,7 +6,7 @@ import YouTubeVideos from "src/components/YouTubeVideos/YouTubeVideos";
 import useLanguageStore from "src/store/LanguageStore";
 import ImageCompare from "src/components/ImageCompare/ImageCompare";
 
-function CallbackContacts() {
+function TabsInfo() {
     const [language, translate] = useLanguageStore(state => [state.language, state.translate])
     return (
         <Tabs
@@ -31,4 +31,4 @@ function CallbackContacts() {
     );
 }
 
-export default CallbackContacts;
+export default TabsInfo;

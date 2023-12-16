@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import styles from './Header.module.scss';
 import clsx from "clsx";
-import logo from 'src/assets/logo.png';
+//import logo from 'src/assets/logo.png';
 
 
 import Container from 'react-bootstrap/Container';
@@ -83,7 +83,8 @@ function Header({title, styleClass}: HeaderProps) {
                                 </Col>
                                 <Col className={clsx('py-3', 'my-auto')}>
                                     <Nav.Link className={clsx('fs-1', 'h-100')} onClick={goToHome}>
-                                        <img src={logo} alt={'logo'} className={styles.img}/>
+                                        {/*<img src={logo} alt={'logo'} className={styles.img}/>*/}
+                                        MvS
                                     </Nav.Link>
                                 </Col>
                                 <Col className={clsx('py-3', 'my-auto')}>
